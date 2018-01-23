@@ -1,0 +1,365 @@
+{
+  "anbox-installer": {
+    "snap_id": "RUVK1Z52NLk8BaKRBhPUUgYbA3ZXCiOu"
+  },
+  "animationmaker": {
+    "snap_id": "88dwTjtEC93DSuOz86fiS0SxJKVWeYWj"
+  },
+  "atom": {
+    "snap_id": "Lf1MF6tizzusVuA6l13ETyH5VDXxwA0D"
+  },
+  "auryo": {
+    "snap_id": "yCb0N30DhF7VzOZqd1cWPJbba4KEUe9T"
+  },
+  "aws-cli": {
+    "snap_id": "CRrJViJiSuDcCkU31G0xpNRVNaj4P960"
+  },
+  "baugeschichte": {
+    "snap_id": "NBgVvJA8YouvrkJw6OEuFDVe0d75UnxH"
+  },
+  "bitcoin": {
+    "snap_id": "GCxpYnjFpWcHZ410SZhPNrdhjNTGzr7Y"
+  },
+  "bitticker": {
+    "snap_id": "NuG6keooSf4PhU7xNk6I2nXYKLXCgnqJ"
+  },
+  "blender": {
+    "snap_id": "ZWyHJJiPBBfMKpaaKKrpSgAcupWkHWPz"
+  },
+  "boa": {
+    "snap_id": "eDsKaYaf4gx5I1bfSy6SdTTfKc1ppDx7"
+  },
+  "brave": {
+    "snap_id": "uE3hSmGE91m9MpbDEnUWi2vpeumH6gmv"
+  },
+  "castersoundboard": {
+    "snap_id": "YVLw9cnCBmE3z0gJ6tvzVE8msDzlZaQR"
+  },
+  "chromium": {
+    "snap_id": "XKEcBqPM06H1Z7zGOdG5fbICuf8NWK5R"
+  },
+  "clementine": {
+    "snap_id": "iQt7YKQmz7Ax3FxYTeZism8TwHcR1CYB"
+  },
+  "cloudtag": {
+    "snap_id": "E8BYCIcV4dognYh2xhMwT9pGseb22X3v"
+  },
+  "codebreakers": {
+    "snap_id": "9RHGBFG3a83SavexQGzNT8BHMCSfZ3CN"
+  },
+  "convos": {
+    "snap_id": "hlDnZhhos1kPWFfcJh4xFG9hmXdtVXEx"
+  },
+  "cool-retro-term": {
+    "snap_id": "6d6yw8CVhAYys3Z09b4sGSwzXSWR6btg"
+  },
+  "corebird": {
+    "snap_id": "jpPjOVJYHmcVHb0EJVC6hVlq6eCEYkZ5"
+  },
+  "cryptowatch": {
+    "snap_id": "AGhD3Y1TTQEVNwTfHQDcwWQGbU65ksNE"
+  },
+  "cumulonimbus": {
+    "snap_id": "XKren4v7zG7Qs0u0uKAnrvF6JdF4OIBC"
+  },
+  "currate": {
+    "snap_id": "BFXckfsuB2NxpR8eaGeE6Dz6XWrvL3cw"
+  },
+  "deepin-music": {
+    "snap_id": "plrCNvSRvsKquJtdHdvjoyHOtKbIMpJZ"
+  },
+  "dino-client": {
+    "snap_id": "OZ5YJt2H0Ej51DQcp7MuSqgwVdM9Cbpe"
+  },
+  "discord": {
+    "snap_id": "qHVefGEBezeuCeSfTND40uoUD6GRw8BO"
+  },
+  "docker": {
+    "snap_id": "sLCsFAO8PKM5Z0fAKNszUOX0YASjQfeZ"
+  },
+  "doctl": {
+    "snap_id": "37RaX7lHS7bKamfcFcXcx27EyAaCIzgG"
+  },
+  "electrum": {
+    "snap_id": "arteQqwdIGwtP3ETSe58cRbhdsa9oS4z"
+  },
+  "eog": {
+    "snap_id": "wWtGKn0vLvagfg975tebXfBARLUvU3G7"
+  },
+  "fetch-btc": {
+    "snap_id": "iVjpvD9Mx0esnEMAhnLOsoPrPej9Z5Jb"
+  },
+  "ffmpeg": {
+    "snap_id": "Ee7LGphwQR669pcfCCdl0oJQouta69to"
+  },
+  "get-iplayer": {
+    "snap_id": "KFpiyRyf3GYcvw8yWZzqf3WLhd0yADIM"
+  },
+  "ghost-desktop": {
+    "snap_id": "kLsW4dAAae29VPtToiUFb2xPGfUn9jra"
+  },
+  "gimp": {
+    "snap_id": "KDHYbyuzZukmLhiogKiUksByRhXD2gYV"
+  },
+  "gitter-desktop": {
+    "snap_id": "bCNAwbJcrJfyMSsyBGfHJAOwLwRpnFIU"
+  },
+  "gnome-calculator": {
+    "snap_id": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG"
+  },
+  "gnucash-jz": {
+    "snap_id": "vVm1tLohxIvkFkTxz9z7C9MJGqLXkZ9Z"
+  },
+  "goland": {
+    "snap_id": "c1q4xx6sUD3t01hy7LB6XIjMJrXo6n3s"
+  },
+  "handbrake-jz": {
+    "snap_id": "FEwKNHxQ7LVb0P1SBvpO0toetKhbvqvy"
+  },
+  "heroku": {
+    "snap_id": "pAGMQ0HpmF09Smxc9d3ZOUiVNhtWhy7r"
+  },
+  "hiri": {
+    "snap_id": "rqjJgJ4toGMPKL5GE86c1gbrYfX7R1I9"
+  },
+  "hollywood": {
+    "snap_id": "Pm2bty7P5bN9ipnbk2lrkYdXsGogokIY"
+  },
+  "imagenes": {
+    "snap_id": "jApatSZjsz1xfkCWNJzIs62HImA0nTx7"
+  },
+  "inkscape": {
+    "snap_id": "tIrcA87dMWthuDORCCRU0VpidK5SBVOc"
+  },
+  "instagraph": {
+    "snap_id": "ZDQ1iJwjyM50MOnWOKwDNtFZmfc9R0A5"
+  },
+  "intellij-idea-community": {
+    "snap_id": "KSPcSedMkvhgEjkg3Ki1PdjX2Ylm2aOy"
+  },
+  "intellij-idea-ultimate": {
+    "snap_id": "i5O0FAhwADbvDr8LYQ6jVHxPEJle7m6C"
+  },
+  "irccloud-desktop": {
+    "snap_id": "GzRid1k9bGro72ivGFJWluviBgwnFSCO"
+  },
+  "juju": {
+    "snap_id": "e2CPHpB1fUxcKtCyJTsm5t3hN9axJ0yj"
+  },
+  "konversation": {
+    "snap_id": "BY0kc7ovfLfEmprwpEIToIOatcNj8KfV"
+  },
+  "lindacoin-wallet": {
+    "snap_id": "2tkRpbKyg46DhdDh0A52rnPFlwAz7DME"
+  },
+  "livetuner": {
+    "snap_id": "DZM0WbwmO9WXRQtxLlVsy2a7lBWvWaL5"
+  },
+  "mailspring": {
+    "snap_id": "0TyNxgP6wEM3nTXzymtc1wOnvl2P6Iij"
+  },
+  "marsshooter": {
+    "snap_id": "5YRF3ZPZpPhlacYTqMVDPWa2rjgUUcGw"
+  },
+  "matroska-tools": {
+    "snap_id": "JF4RE93E4clsyJAEGglMqAQaESxvyfcz"
+  },
+  "mattermost-desktop": {
+    "snap_id": "ed0pxJoDHrgmAWHH7baX5nryAHy1UNj0"
+  },
+  "micro": {
+    "snap_id": "doU6KflBPp4ayHlwmLhafENYrK12iyBk"
+  },
+  "micropolis": {
+    "snap_id": "ZOQQAuPhsvlJs67CxxJF69Kqc8wRlAtx"
+  },
+  "minetest": {
+    "snap_id": "DtXxirDGfOc8LeUJVENXGTir4Oq0F7Ts"
+  },
+  "mountain-tapir": {
+    "snap_id": "JIqwEX7bcfxP2gTieY7Lxr91URnXhWE7"
+  },
+  "mumble": {
+    "snap_id": "wVB1RfBgsZY8dmVifSFeMkTE6UN41osI"
+  },
+  "musescore": {
+    "snap_id": "GmK6WCOqKsHaWLXKiXq4fPuVIqoI0nFR"
+  },
+  "nanowallet": {
+    "snap_id": "ikUMxZjKq6UdnC79fxx6zc5kvRDYc1Dw"
+  },
+  "nextcloud": {
+    "snap_id": "njObIbGQEaVx1H4nyWxchk1i8opy4h54"
+  },
+  "nextcloud-client": {
+    "snap_id": "qRAMgnTMeyTaHngceQL4vFJf5mOl9uV1"
+  },
+  "node-red": {
+    "snap_id": "lwGTfxA0S0e61kiyMAuXQkq6Tvni0dYm"
+  },
+  "noson": {
+    "snap_id": "d7aPr2121k98JGTTE8UTebzNrSUZhIXh"
+  },
+  "offlineimap": {
+    "snap_id": "apILX2pOP9bLgxFMb9aixualBrhtk0X0"
+  },
+  "ohmygiraffe": {
+    "snap_id": "OZ7LxjGo2W76qWvpNpiklbRtCA4u84L3"
+  },
+  "openra": {
+    "snap_id": "kY8dJvXQTxZ0keTgiCl1WBGT45o0hYYo"
+  },
+  "organize-my-files": {
+    "snap_id": "MD3udHR0qvm3HcUOSOfFsXwbYBrSkUeX"
+  },
+  "paintsupreme-3d": {
+    "snap_id": "F3FwHKjIhKuCWR2cygfRNAhoGppsRRt6"
+  },
+  "peek": {
+    "snap_id": "vwuGsz3C8WZOc4QYavfmQKh4BKyow8wa"
+  },
+  "pencilsheep": {
+    "snap_id": "cuvDnClk3NZwyHOn9oWNfyn0K3BMo6H0"
+  },
+  "phpstorm": {
+    "snap_id": "qYt8GFdYX5B4J7mm6S6F4r4vAwnG5IgV"
+  },
+  "picard": {
+    "snap_id": "Fj6GXMEyLktFatWeVbPwiHgGpI6xS6MD"
+  },
+  "pin-town": {
+    "snap_id": "8ZiDCAC7uIH80MIQzZDRgGNtjQCoASFU"
+  },
+  "play0ad": {
+    "snap_id": "kuy6PEXtAFBPrp65dPXcTJ3dx1SM902R"
+  },
+  "polarr": {
+    "snap_id": "oOxiekhc2pVHoTfGudxNM0xNUEJWG5jD"
+  },
+  "pycharm-community": {
+    "snap_id": "Qo9GiW9eyzgN1tXmWpQ9gdstdFsj4K7E"
+  },
+  "pycharm-educational": {
+    "snap_id": "Oo1l4VUHaDaLM2etpSQkrXf7dAIFGgkq"
+  },
+  "pycharm-professional": {
+    "snap_id": "Uqpw0ZWqy6Wh4mgaWE0rxgM5tAGCwf4D"
+  },
+  "quadrapassel": {
+    "snap_id": "bjPxXSBdXzlBa4PnaYGZtofDVAHRlcj7"
+  },
+  "rclone": {
+    "snap_id": "IsLsJunB7e4PJIEtB0VEzfrSWBxgWYlR"
+  },
+  "remmina": {
+    "snap_id": "XC73ux8XOHjoahd9keAyvM3LVkPBLTzy"
+  },
+  "retroarch": {
+    "snap_id": "7xMPaiM3yBx0npSKPNuTYNhzW4xI9CDk"
+  },
+  "rocketchat-desktop": {
+    "snap_id": "G4dFdVrFArll5teSvqpgWfRXIMGjME0l"
+  },
+  "rocketchat-server": {
+    "snap_id": "wdBUbiEuMNHmAHLBCXQXOcXaOCvbWS1e"
+  },
+  "rokuterm": {
+    "snap_id": "C8Snu9zjZCV5EM8MgCP6WQA5WBaid5UV"
+  },
+  "rubymine": {
+    "snap_id": "1PWZ4ToZh4kt4p67xA2vSvAKvIe3YqbP"
+  },
+  "safex-wallet": {
+    "snap_id": "Hrd1DAfI4xM6lUVoQjwk9LFLp1TKhPZN"
+  },
+  "scummvm": {
+    "snap_id": "wXpsTyUtxXJ6aqnqhWRi0d3WwqzrD1Yv"
+  },
+  "shotcut": {
+    "snap_id": "QbcwWzVel4jXFaSClk6oiPpN3GCTXwvi"
+  },
+  "simplenote": {
+    "snap_id": "xKUf60sdYMZETIWuvj9eiqscV5J6M3w9"
+  },
+  "simplescreenrecorder": {
+    "snap_id": "D1RywxDH5MyBrKjkT546DdfxIgxOaoJs"
+  },
+  "simplyfortran": {
+    "snap_id": "EdfB1yTlsvQMgLwTCOmYFfj8etW1dIwQ"
+  },
+  "skrifa": {
+    "snap_id": "K33TeOuBsS5A7wNK9QCpYGDRAUzdhYTh"
+  },
+  "slack": {
+    "snap_id": "JUJH91Ved74jd4ZgJCpzMBtYbPOzTlsD"
+  },
+  "slack-term": {
+    "snap_id": "lSFqIFbqUTX2YpTYIyWoVtFjc5sN0FQa"
+  },
+  "snapdiff": {
+    "snap_id": "YnGQB64P0fIojVJ7tzMyswFiWIkeRkeR"
+  },
+  "solitaire": {
+    "snap_id": "0rnkesZh4jFy9oovDTvL661qVTW4iDdE"
+  },
+  "spotify": {
+    "snap_id": "pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7"
+  },
+  "subsonic-arubislander": {
+    "snap_id": "BFfOki4szoVbR3IQxIuzAmiY0ECR4AdD"
+  },
+  "sudoku-game": {
+    "snap_id": "XKJBpAidfjnXmq06WLJPqSCi0CaDMf7D"
+  },
+  "supertuxkart": {
+    "snap_id": "OYiX2afEAetC4e61gP6ndLs9ieJPUc83"
+  },
+  "teleconsole": {
+    "snap_id": "va6EeaPq6HXDUugR7Xm99JZLyOm4IogO"
+  },
+  "tootstream": {
+    "snap_id": "WVu3kawbrAptOQboBgpCz3O6qG2GeDsW"
+  },
+  "vectr": {
+    "snap_id": "vWtx1TdkiqI0GkF81qcKoUFMUSzbQy55"
+  },
+  "vestin": {
+    "snap_id": "mRR2vwluMr4NelAnDFCXk60SgNxXh5Iw"
+  },
+  "vlc": {
+    "snap_id": "RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd"
+  },
+  "warzone2100": {
+    "snap_id": "roFhaRzMw8ted6zNEL8NQnNrkFdIHnHv"
+  },
+  "wavebox": {
+    "snap_id": "Z8BmkR8eoged6A9LJ4r5MxSFGO25SM58"
+  },
+  "webstorm": {
+    "snap_id": "FY2LOqAxBypOW7jJnKh6i64HDgadNRYI"
+  },
+  "wekan": {
+    "snap_id": "jtpboSYvTCEyHoutkkRo1SI9ioSMOUb3"
+  },
+  "wordpress-desktop": {
+    "snap_id": "JTB9j22bubJxMtkh56txeodPvguTmSys"
+  },
+  "wormhole": {
+    "snap_id": "NOZSH62zMXFazJq0adh8ztBM7VYNPxmP"
+  },
+  "writefull": {
+    "snap_id": "4uQoiFQU6mJNhFvoNLgJSt2GX9OwcidE"
+  },
+  "xnsketch": {
+    "snap_id": "ugzF6T8l9DMwxilU0RTAejTn1zHsqCPb"
+  },
+  "xnviewmp": {
+    "snap_id": "B1IDdy9k5MAN8SA7Bt32RkNma3pt9AAT"
+  },
+  "yakyak": {
+    "snap_id": "ZjYE4QRDx4HERZ9yV0FX7FgXIWXm0hZ3"
+  },
+  "zeronet": {
+    "snap_id": "BgK5cBFosCcYaUDHdGejtXN5nzPsRVac"
+  }
+}
