@@ -19,7 +19,6 @@ Section operation hacks
     2018-01-23 20:49:58,355 WARNI *** Ignoring # plexmediaserver -> menta-plexmediaserver maybe ?
     2018-01-23 20:49:58,356 INFO  => Processing social-networking (16 entries)
     2018-01-23 20:49:58,356 INFO  => Processing productivity (17 entries)
-    2018-01-23 20:49:58,356 WARNI *** Ignoring # keypassxc -> store has no idea
     2018-01-23 20:49:58,357 INFO  => Processing developers (16 entries)
     2018-01-23 20:49:58,357 INFO  => Processing featured (16 entries)
     2018-01-23 20:49:58,358 INFO  Saving "payload.json"
