@@ -13,6 +13,23 @@ logger.setLevel(logging.INFO)
 
 name_cache = {}
 
+# Both API calls nnly consider 'amd64' for now ...
+
+def get_current_sections():
+    r = requests.get('https://api.snapcraft.io/api/v1/snaps/sections')
+    section_names = [
+        s['name'] for s in r.json()['_embedded']['clickindex:sections']]
+    sections = {}
+    for name in section_names:
+        r = requests.get(
+            'https://api.snapcraft.io/api/v1/snaps/search?section={}&fields=snap_id'
+            .format(name))
+        snap_ids = [
+            s['snap_id'] for s in r.json()['_embedded']['clickindex:package']]
+        logger.info('+++ Fetched {} ({} entries)'.format(name, len(snap_ids)))
+        sections[name] = snap_ids
+
+    return sections
 
 def get_snap_id(name):
     if name_cache.get(name) is not None:
@@ -32,37 +49,112 @@ def get_snap_id(name):
 
 
 def main():
-    payload = {'sections': []}
+
+    logger.info('Fetching current sections ...')
+    current_sections = get_current_sections()
+    current_payload = {'sections': []}
+    for section_name in sorted(current_sections.keys()):
+        snap_ids = current_sections[section_name]
+        snaps = []
+        for i, snap_id in enumerate(snap_ids):
+            snap = {
+                'series': '16',
+                'snap_id': snap_id,
+                'featured': i < 2,
+                'score': len(snap_ids) - i,
+            }
+            snaps.append(snap)
+        current_payload['sections'].append({
+            'section_name': section_name,
+            'snaps': snaps,
+        })
+
+    logger.info('Saving "current.json" ¯\_(ツ)_/¯ ...')
+    with open('current.json', 'w') as fd:
+        fd.write(json.dumps(current_payload, indent=2, sort_keys=True))
+
+
+    logger.info('Processing new sections ...')
+    new_sections = {}
     for fn in os.listdir('.'):
         if not fn.endswith('.section'):
             continue
         section_name = fn.split('.')[0]
         names = [n.strip() for n in open(fn).readlines() if n.strip()]
-
-        logger.info(
-            '=> Processing {} ({} entries)'
-            .format(section_name, len(names)))
-
-        snaps = []
-        for i, n in enumerate(names):
-            if n.startswith('#'):
-                logger.warning('*** Ignoring {}'.format(n))
+        snap_ids = []
+        for name in names:
+            if name.startswith('#'):
+                logger.info('!!! Ignoring {}'.format(name))
                 continue
+            snap_ids.append(get_snap_id(name))
+        logger.info(
+            '*** Parsing {} ({} entries)'.format(section_name, len(names)))
+        new_sections[section_name] = snap_ids
+
+    # Assembly deletion payload.
+    logger.info('Calculating snap deletions ...')
+    delete_sections = []
+    delete_payload = {'sections': []}
+    for section_name in sorted(current_sections.keys()):
+        if section_name not in new_sections.keys():
+            delete_sections.append(section_name)
+            continue
+        snap_ids = list(
+            set(current_sections[section_name]) - set(new_sections[section_name]))
+        if not snap_ids:
+            continue
+        delete_payload['sections'].append({
+            'section_name': section_name,
+            'snaps': [{'series': '16', 'snap_id': s} for s in sorted(snap_ids)],
+        })
+
+    if delete_payload['sections']:
+        logger.info('Saving "delete.json" ...')
+        with open('delete.json', 'w') as fd:
+            fd.write(json.dumps(delete_payload, indent=2, sort_keys=True))
+    else:
+        logger.info('No snaps to be deleted.')
+
+    logger.info('Calculating snap updates ...')
+    update_payload = {'sections': []}
+    for section_name in sorted(new_sections.keys()):
+        snap_ids = new_sections[section_name]
+        snaps = []
+        for i, snap_id in enumerate(snap_ids):
             snap = {
                 'series': '16',
-                'snap_id': get_snap_id(n),
+                'snap_id': snap_id,
                 'featured': i < 2,
-                'score': len(names) - i,
+                'score': len(snap_ids) - i,
             }
             snaps.append(snap)
-        payload['sections'].append({
+        update_payload['sections'].append({
             'section_name': section_name,
             'snaps': snaps,
         })
 
-    logger.info('Saving "payload.json"')
-    with open('payload.json', 'w') as fd:
-        fd.write(json.dumps(payload, indent=2, sort_keys=True))
+    logger.info('Saving "update.json" ...')
+    with open('update.json', 'w') as fd:
+        fd.write(json.dumps(update_payload, indent=2, sort_keys=True))
+
+    print(72 * '=')
+    print('Copy "delete.json" and "update.json" to a snapfind instance. '
+          'Then run the following commands:')
+    print()
+    print('  $ psql <production_dsn> -c "DELETE FROM section WHERE name IN ({});"'
+          .format(', '.join([repr(s) for s in delete_sections])))
+    print("  $ curl -X DELETE -H 'Content-Type: application/json' "
+          "http://localhost:8003/sections/snaps -d '@delete.json'")
+    print("  $ curl -X POST -H 'Content-Type: application/json' "
+          "http://localhost:8003/sections/snaps -d '@update.json'")
+    print()
+    print('In case you screwed things up, copy "current.json" to a snapfind '
+          'instance. Then run the following commands:')
+    print()
+    print('  $ psql <production_dsn> -c "DELETE FROM section;"')
+    print("  $ curl -X POST -H 'Content-Type: application/json' "
+          "http://localhost:8003/sections/snaps -d '@current.json'")
+    print(72 * '=')
 
 
 if __name__ == '__main__':
@@ -71,17 +163,10 @@ if __name__ == '__main__':
         with open('cache.json') as fd:
             name_cache = json.load(fd)
     except:
-        logger.warning('No cache ...')
+        logger.warning('Missing/Cold cache ...')
 
     try:
         main()
-        logger.info(40 * '=')
-        logger.info('Copy "payload.json" to a snapfind instance.')
-        logger.info('Then run the following command:')
-        logger.info(40 * '-')
-        logger.info("curl -X POST -H 'Content-Type: application/json' "
-                    "http://localhost:8003/sections/snaps -d '@payload.json'")
-        logger.info(40 * '=')
     finally:
         logger.info('Saving cache ...')
         with open('cache.json', 'w') as fd:
