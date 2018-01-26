@@ -60,7 +60,7 @@ def main():
             snap = {
                 'series': '16',
                 'snap_id': snap_id,
-                'featured': i < 2,
+                'featured': i < 20,
                 'score': len(snap_ids) - i,
             }
             snaps.append(snap)
@@ -72,7 +72,6 @@ def main():
     logger.info('Saving "current.json" ¯\_(ツ)_/¯ ...')
     with open('current.json', 'w') as fd:
         fd.write(json.dumps(current_payload, indent=2, sort_keys=True))
-
 
     logger.info('Processing new sections ...')
     new_sections = {}
@@ -124,7 +123,7 @@ def main():
             snap = {
                 'series': '16',
                 'snap_id': snap_id,
-                'featured': i < 2,
+                'featured': i < 20,
                 'score': len(snap_ids) - i,
             }
             snaps.append(snap)
@@ -141,12 +140,12 @@ def main():
     print('Copy "delete.json" and "update.json" to a snapfind instance. '
           'Then run the following commands:')
     print()
-    print('  $ psql <production_dsn> -c "DELETE FROM section WHERE name IN ({});"'
-          .format(', '.join([repr(s) for s in delete_sections])))
     print("  $ curl -X DELETE -H 'Content-Type: application/json' "
           "http://localhost:8003/sections/snaps -d '@delete.json'")
     print("  $ curl -X POST -H 'Content-Type: application/json' "
           "http://localhost:8003/sections/snaps -d '@update.json'")
+    print('  $ psql <production_dsn> -c "DELETE FROM section WHERE name IN ({});"'
+          .format(', '.join([repr(s) for s in delete_sections])))
     print()
     print('In case you screwed things up, copy "current.json" to a snapfind '
           'instance. Then run the following commands:')
