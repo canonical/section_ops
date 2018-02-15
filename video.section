@@ -1,10 +1,10 @@
 vlc
-kodi
+# kodi -> not in stable
 animationmaker
 shotcut
 handbrake-jz
 ffmpeg
-plexmediaserver
+# plexmediaserver -> menta-plexmediaserver and is private
 matroska-tools
 livetuner
 simplescreenrecorder
