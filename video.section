@@ -1,10 +1,10 @@
 vlc
-# kodi -> not in stable
+kodi
 animationmaker
 shotcut
 handbrake-jz
 ffmpeg
-# plexmediaserver -> menta-plexmediaserver maybe ?
+plexmediaserver
 matroska-tools
 livetuner
 simplescreenrecorder
