@@ -27,7 +27,7 @@ def get_current_sections():
     for name in section_names:
         r = requests.get(
             'https://api.snapcraft.io/api/v1/snaps/search'
-            '?section={}&fields=snap_id'
+            '?confinement=classic,strict&section={}&fields=snap_id'
             .format(name))
         snap_ids = [
             s['snap_id'] for s in r.json()['_embedded']['clickindex:package']]
@@ -113,11 +113,14 @@ def main():
         if len(unique_names) < len(names):
             logger.warning('!!! Ignoring duplicated entries.')
         snap_ids = []
-        for name in unique_names:
+        for name in names:
             if name.startswith('#'):
                 logger.info('!!! Ignoring {}'.format(name))
                 continue
-            snap_ids.append(get_snap_id(name))
+            snap_id = get_snap_id(name)
+            if snap_id in snap_ids:
+                continue
+            snap_ids.append(snap_id)
         new_sections[section_name] = snap_ids
 
     # Assembly deletion payload.
