@@ -48,6 +48,16 @@ def main():
                        "jq '.' > /tmp/current.json")
         logger.warning('')
         logger.warning('Otherwise deletions cannot be calculated.')
+    else:
+        try:
+            with open('current.json') as fd:
+                payload = json.load(fd)
+                current_sections = {
+                    item['section_name']: [s['snap_id'] for s in item['snaps']]
+                    for item in payload['sections']}
+        except json.decoder.JSONDecodeError:
+            logger.error('Could not parse {!r}'.format(args.current))
+            return
 
     logger.info('Processing new sections ...')
     new_sections = {}
