@@ -98,6 +98,9 @@
   "ffmpeg": {
     "snap_id": "Ee7LGphwQR669pcfCCdl0oJQouta69to"
   },
+  "firefox": {
+    "snap_id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk"
+  },
   "get-iplayer": {
     "snap_id": "KFpiyRyf3GYcvw8yWZzqf3WLhd0yADIM"
   },
@@ -106,6 +109,9 @@
   },
   "gimp": {
     "snap_id": "KDHYbyuzZukmLhiogKiUksByRhXD2gYV"
+  },
+  "gitkraken": {
+    "snap_id": "aWUrHnWTzA1R71VuWsBG5v8S0ibIxmjR"
   },
   "gitter-desktop": {
     "snap_id": "bCNAwbJcrJfyMSsyBGfHJAOwLwRpnFIU"
@@ -220,6 +226,9 @@
   },
   "notepadqq": {
     "snap_id": "6iueWFAtx9P2OQz4SIW64Kry9hT8aUCL"
+  },
+  "obs-studio": {
+    "snap_id": "6uLU2MJmBURfLNz4rmL4WT2CmtVULE2u"
   },
   "offlineimap": {
     "snap_id": "apILX2pOP9bLgxFMb9aixualBrhtk0X0"
@@ -358,6 +367,9 @@
   },
   "telegram-desktop": {
     "snap_id": "jpdoHqMd90M39DdH2JSZbeQxipqHtwLo"
+  },
+  "tiled": {
+    "snap_id": "rqLaGwUxwsLj0suadyXMIuue1Vv5SuaJ"
   },
   "tootstream": {
     "snap_id": "WVu3kawbrAptOQboBgpCz3O6qG2GeDsW"
