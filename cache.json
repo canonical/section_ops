@@ -5,6 +5,9 @@
   "animationmaker": {
     "snap_id": "88dwTjtEC93DSuOz86fiS0SxJKVWeYWj"
   },
+  "ao": {
+    "snap_id": "PUfipsnJ8BkRmMCUM9LdVIoVt5oSrYD5"
+  },
   "atom": {
     "snap_id": "Lf1MF6tizzusVuA6l13ETyH5VDXxwA0D"
   },
@@ -31,6 +34,9 @@
   },
   "brave": {
     "snap_id": "uE3hSmGE91m9MpbDEnUWi2vpeumH6gmv"
+  },
+  "bunqdesktop": {
+    "snap_id": "j13u7IohNQx8BRAxE5KR0R1EtuB13k35"
   },
   "castersoundboard": {
     "snap_id": "YVLw9cnCBmE3z0gJ6tvzVE8msDzlZaQR"
@@ -83,6 +89,9 @@
   "doctl": {
     "snap_id": "37RaX7lHS7bKamfcFcXcx27EyAaCIzgG"
   },
+  "dosbox-x": {
+    "snap_id": "ogcav3zrjqBXdDx8ofgJYMEPSLVRs9ID"
+  },
   "easy-disk-cleaner": {
     "snap_id": "47w91gRx2rtJXusOSLQlJcHYiDDmHRTg"
   },
@@ -100,6 +109,9 @@
   },
   "firefox": {
     "snap_id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk"
+  },
+  "fkill": {
+    "snap_id": "2ebJz1t7LsmGu2JCwSSUYrT3L3CrJ049"
   },
   "get-iplayer": {
     "snap_id": "KFpiyRyf3GYcvw8yWZzqf3WLhd0yADIM"
@@ -124,6 +136,12 @@
   },
   "goland": {
     "snap_id": "c1q4xx6sUD3t01hy7LB6XIjMJrXo6n3s"
+  },
+  "goxel": {
+    "snap_id": "IFuH6EYYoP3V3Kd4vgmikIlM9V5VaCOb"
+  },
+  "gravit-designer": {
+    "snap_id": "ue21otCteSEE9nQQPHYljra6xI39DI1t"
   },
   "handbrake-jz": {
     "snap_id": "FEwKNHxQ7LVb0P1SBvpO0toetKhbvqvy"
@@ -154,6 +172,9 @@
   },
   "irccloud-desktop": {
     "snap_id": "GzRid1k9bGro72ivGFJWluviBgwnFSCO"
+  },
+  "irssi": {
+    "snap_id": "Qdbh7cyFD0DTQeeqqji0yWo90oMx4pnj"
   },
   "juju": {
     "snap_id": "e2CPHpB1fUxcKtCyJTsm5t3hN9axJ0yj"
@@ -209,6 +230,9 @@
   "musescore": {
     "snap_id": "GmK6WCOqKsHaWLXKiXq4fPuVIqoI0nFR"
   },
+  "mutt": {
+    "snap_id": "DEYgf7eZVCVPsQm0EqEHWw5g5BUBSbM8"
+  },
   "nanowallet": {
     "snap_id": "ikUMxZjKq6UdnC79fxx6zc5kvRDYc1Dw"
   },
@@ -241,6 +265,9 @@
   },
   "openra": {
     "snap_id": "kY8dJvXQTxZ0keTgiCl1WBGT45o0hYYo"
+  },
+  "ora": {
+    "snap_id": "UOherCuaihZSvX4eKrx7FqKHKah4TEqb"
   },
   "organize-my-files": {
     "snap_id": "MD3udHR0qvm3HcUOSOfFsXwbYBrSkUeX"
@@ -314,6 +341,12 @@
   "scummvm": {
     "snap_id": "wXpsTyUtxXJ6aqnqhWRi0d3WwqzrD1Yv"
   },
+  "sdlpop": {
+    "snap_id": "gmEYI3Be1Sbo0OSVdOrYDOHFuYrnLKvh"
+  },
+  "shattered-pixel-dungeon": {
+    "snap_id": "mMT5CetV8KkEPI0wYNKe5I1CGONDVB0B"
+  },
   "shotcut": {
     "snap_id": "QbcwWzVel4jXFaSClk6oiPpN3GCTXwvi"
   },
@@ -373,6 +406,9 @@
   },
   "tootstream": {
     "snap_id": "WVu3kawbrAptOQboBgpCz3O6qG2GeDsW"
+  },
+  "tusk": {
+    "snap_id": "HVJ2ambr66oyGX9hAjvRe4jQi8ngjxMT"
   },
   "vectr": {
     "snap_id": "vWtx1TdkiqI0GkF81qcKoUFMUSzbQy55"
