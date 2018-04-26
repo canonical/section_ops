@@ -2,6 +2,9 @@
   "anbox-installer": {
     "snap_id": "RUVK1Z52NLk8BaKRBhPUUgYbA3ZXCiOu"
   },
+  "android-studio": {
+    "snap_id": "VNTeIi51l6cIZ1gaWHwx0PoP7JaCb61c"
+  },
   "animationmaker": {
     "snap_id": "88dwTjtEC93DSuOz86fiS0SxJKVWeYWj"
   },
@@ -137,6 +140,9 @@
   "goland": {
     "snap_id": "c1q4xx6sUD3t01hy7LB6XIjMJrXo6n3s"
   },
+  "google-play-music-desktop-player": {
+    "snap_id": "4Y41wz5UioPArGBhEyQaO1DkY5pfUEpa"
+  },
   "goxel": {
     "snap_id": "IFuH6EYYoP3V3Kd4vgmikIlM9V5VaCOb"
   },
@@ -247,6 +253,9 @@
   },
   "noson": {
     "snap_id": "d7aPr2121k98JGTTE8UTebzNrSUZhIXh"
+  },
+  "notepad-plus-plus": {
+    "snap_id": "155ZvKiCILXt4S5Ro8YZmzKHgNPPedVj"
   },
   "notepadqq": {
     "snap_id": "6iueWFAtx9P2OQz4SIW64Kry9hT8aUCL"
