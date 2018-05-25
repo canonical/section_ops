@@ -14,6 +14,9 @@
   "atom": {
     "snap_id": "Lf1MF6tizzusVuA6l13ETyH5VDXxwA0D"
   },
+  "audovia": {
+    "snap_id": "d1npoVDP3CKLZAWHFC7tN40qCrXU4hLX"
+  },
   "auryo": {
     "snap_id": "yCb0N30DhF7VzOZqd1cWPJbba4KEUe9T"
   },
@@ -29,6 +32,9 @@
   "bitticker": {
     "snap_id": "NuG6keooSf4PhU7xNk6I2nXYKLXCgnqJ"
   },
+  "bitwarden": {
+    "snap_id": "Nvk8FZTYrAYFKXN74w5LtOrnOhE38fU8"
+  },
   "blender": {
     "snap_id": "ZWyHJJiPBBfMKpaaKKrpSgAcupWkHWPz"
   },
@@ -40,6 +46,9 @@
   },
   "bunqdesktop": {
     "snap_id": "j13u7IohNQx8BRAxE5KR0R1EtuB13k35"
+  },
+  "canonical-livepatch": {
+    "snap_id": "b96UJ4vttpNhpbaCWctVzfduQcPwQ5wn"
   },
   "castersoundboard": {
     "snap_id": "YVLw9cnCBmE3z0gJ6tvzVE8msDzlZaQR"
@@ -56,6 +65,12 @@
   "codebreakers": {
     "snap_id": "9RHGBFG3a83SavexQGzNT8BHMCSfZ3CN"
   },
+  "codenamelt": {
+    "snap_id": "i1aW8ePSsIMC1vVlMuX5WAUJ5aIkhkcx"
+  },
+  "conjure-up": {
+    "snap_id": "ijQR4HjYlTAmIjELJm5XCpNAqbDZWJ3h"
+  },
   "convos": {
     "snap_id": "hlDnZhhos1kPWFfcJh4xFG9hmXdtVXEx"
   },
@@ -64,6 +79,9 @@
   },
   "corebird": {
     "snap_id": "jpPjOVJYHmcVHb0EJVC6hVlq6eCEYkZ5"
+  },
+  "corsixth": {
+    "snap_id": "Pi4CEPEPcrQyxVJ35ynEDNOZfCjdpyLO"
   },
   "cryptowatch": {
     "snap_id": "AGhD3Y1TTQEVNwTfHQDcwWQGbU65ksNE"
@@ -83,6 +101,9 @@
   "dino-client": {
     "snap_id": "OZ5YJt2H0Ej51DQcp7MuSqgwVdM9Cbpe"
   },
+  "discographer": {
+    "snap_id": "DVYYVuIYligbUAeMq8wJRoRPTQEaXoUu"
+  },
   "discord": {
     "snap_id": "qHVefGEBezeuCeSfTND40uoUD6GRw8BO"
   },
@@ -98,11 +119,17 @@
   "easy-disk-cleaner": {
     "snap_id": "47w91gRx2rtJXusOSLQlJcHYiDDmHRTg"
   },
+  "eclipse": {
+    "snap_id": "QzFGHW76hR3cZjpcuHt4sAjj5KZbd05T"
+  },
   "electrum": {
     "snap_id": "arteQqwdIGwtP3ETSe58cRbhdsa9oS4z"
   },
   "eog": {
     "snap_id": "wWtGKn0vLvagfg975tebXfBARLUvU3G7"
+  },
+  "etcd": {
+    "snap_id": "TKebVGcPeDKoOqAmNmczU2oWLtsojKD5"
   },
   "fetch-btc": {
     "snap_id": "iVjpvD9Mx0esnEMAhnLOsoPrPej9Z5Jb"
@@ -161,6 +188,12 @@
   "hollywood": {
     "snap_id": "Pm2bty7P5bN9ipnbk2lrkYdXsGogokIY"
   },
+  "htop": {
+    "snap_id": "hJmReLmgXSUj4SF7WhyTVRV6IzUa4QUZ"
+  },
+  "hugo": {
+    "snap_id": "t6YzDBM3com27avINGL5OD6ZKKG654ez"
+  },
   "imagenes": {
     "snap_id": "jApatSZjsz1xfkCWNJzIs62HImA0nTx7"
   },
@@ -185,6 +218,9 @@
   "juju": {
     "snap_id": "e2CPHpB1fUxcKtCyJTsm5t3hN9axJ0yj"
   },
+  "keepalived": {
+    "snap_id": "V4Z90JuG4d64ycAAl948fM4vWQA9594q"
+  },
   "keepassxc": {
     "snap_id": "jf2HsR51rlftaREcwhtxiEcDc76gL4O6"
   },
@@ -202,6 +238,9 @@
   },
   "livetuner": {
     "snap_id": "DZM0WbwmO9WXRQtxLlVsy2a7lBWvWaL5"
+  },
+  "lxd": {
+    "snap_id": "J60k4JY0HppjwOjW8dZdYc8obXKxujRu"
   },
   "mailspring": {
     "snap_id": "0TyNxgP6wEM3nTXzymtc1wOnvl2P6Iij"
@@ -226,6 +265,9 @@
   },
   "minetest": {
     "snap_id": "DtXxirDGfOc8LeUJVENXGTir4Oq0F7Ts"
+  },
+  "mosquitto": {
+    "snap_id": "mDxT0cGOHKSs62MOHSK5Ype0Na5UU2LB"
   },
   "mountain-tapir": {
     "snap_id": "JIqwEX7bcfxP2gTieY7Lxr91URnXhWE7"
@@ -305,6 +347,12 @@
   "polarr": {
     "snap_id": "oOxiekhc2pVHoTfGudxNM0xNUEJWG5jD"
   },
+  "postgresql10": {
+    "snap_id": "W7TagWOq55vJphD3Ek4ZUtQytGRMeQqK"
+  },
+  "prometheus": {
+    "snap_id": "We2QH1ClwGL6V88RJRWuZPWaBBPuzWPL"
+  },
   "pycharm-community": {
     "snap_id": "Qo9GiW9eyzgN1tXmWpQ9gdstdFsj4K7E"
   },
@@ -359,6 +407,9 @@
   "shotcut": {
     "snap_id": "QbcwWzVel4jXFaSClk6oiPpN3GCTXwvi"
   },
+  "signal-desktop": {
+    "snap_id": "r4LxMVp7zWramXsJQAKdamxy6TAWlaDD"
+  },
   "simplenote": {
     "snap_id": "xKUf60sdYMZETIWuvj9eiqscV5J6M3w9"
   },
@@ -392,6 +443,12 @@
   "spotify": {
     "snap_id": "pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7"
   },
+  "stress-ng": {
+    "snap_id": "YMJsyW4vySPdys8BCA7jx8UiOVSVhUT6"
+  },
+  "sublime-text": {
+    "snap_id": "2kOIsSRmQ7zjpIxzZDpoXaZOVejqaGOT"
+  },
   "subsonic-arubislander": {
     "snap_id": "BFfOki4szoVbR3IQxIuzAmiY0ECR4AdD"
   },
@@ -413,6 +470,9 @@
   "tiled": {
     "snap_id": "rqLaGwUxwsLj0suadyXMIuue1Vv5SuaJ"
   },
+  "tizonia": {
+    "snap_id": "GhcPmkNNyI2NORCAAdqEG0R303ITAhO9"
+  },
   "tootstream": {
     "snap_id": "WVu3kawbrAptOQboBgpCz3O6qG2GeDsW"
   },
@@ -427,6 +487,9 @@
   },
   "vlc": {
     "snap_id": "RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd"
+  },
+  "vscode": {
+    "snap_id": "XPQdduIwHiDCZvPHRrmsqV7Nr6nQRuqM"
   },
   "warzone2100": {
     "snap_id": "roFhaRzMw8ted6zNEL8NQnNrkFdIHnHv"
@@ -463,5 +526,8 @@
   },
   "zeronet": {
     "snap_id": "BgK5cBFosCcYaUDHdGejtXN5nzPsRVac"
+  },
+  "zulip": {
+    "snap_id": "xWf9D42hfkH9MaVgzpCr8o5O5L1SqWUh"
   }
 }
