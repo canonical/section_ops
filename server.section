@@ -10,7 +10,7 @@ ffmpeg
 tizonia
 conjure-up
 docker
-postgreql10
+postgresql10
 etcd
 keepalived
 micro
