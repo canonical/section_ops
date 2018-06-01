@@ -1,4 +1,7 @@
 {
+  "0ad": {
+    "snap_id": "LPDZP2jWsSizNHoWrJnckPzVuNm8p2Ur"
+  },
   "anbox-installer": {
     "snap_id": "RUVK1Z52NLk8BaKRBhPUUgYbA3ZXCiOu"
   },
@@ -41,8 +44,14 @@
   "boa": {
     "snap_id": "eDsKaYaf4gx5I1bfSy6SdTTfKc1ppDx7"
   },
+  "brackets": {
+    "snap_id": "NbcB8ZtSfH5bQIfyRynnlBeIIOyGurxD"
+  },
   "brave": {
     "snap_id": "uE3hSmGE91m9MpbDEnUWi2vpeumH6gmv"
+  },
+  "buka": {
+    "snap_id": "LUXVl1kLeXV45liQcKVcopekmo2yRk4f"
   },
   "bunqdesktop": {
     "snap_id": "j13u7IohNQx8BRAxE5KR0R1EtuB13k35"
@@ -245,6 +254,9 @@
   "mailspring": {
     "snap_id": "0TyNxgP6wEM3nTXzymtc1wOnvl2P6Iij"
   },
+  "mapscii": {
+    "snap_id": "YmktiCRE0Dg3FvsSwXiNFHeygSzRtyIo"
+  },
   "marsshooter": {
     "snap_id": "5YRF3ZPZpPhlacYTqMVDPWa2rjgUUcGw"
   },
@@ -361,6 +373,9 @@
   },
   "pycharm-professional": {
     "snap_id": "Uqpw0ZWqy6Wh4mgaWE0rxgM5tAGCwf4D"
+  },
+  "qcomicbook": {
+    "snap_id": "yAY94eSCDCrrvUzzZpmzQn8nuq1sY874"
   },
   "qownnotes": {
     "snap_id": "0Zs2bQCe724ZzBFiMYAYESxhhx85hj0W"
@@ -502,6 +517,9 @@
   },
   "wekan": {
     "snap_id": "jtpboSYvTCEyHoutkkRo1SI9ioSMOUb3"
+  },
+  "whalebird": {
+    "snap_id": "wtlQQaUNASoWxqfxRflcRjU3au6cQ3X0"
   },
   "wordpress-desktop": {
     "snap_id": "JTB9j22bubJxMtkh56txeodPvguTmSys"
