@@ -5,6 +5,9 @@
   "akasha": {
     "snap_id": "QPAMDqKEpq1Rfu07SSohA8cpxmR99WF6"
   },
+  "altair": {
+    "snap_id": "qLPmwUZVQeeiCHb8QxmyQ9RUFOBLq2Qu"
+  },
   "amazon-ssm-agent": {
     "snap_id": "T09mpujiTnzSdSCuqNkE7YXXTWDq13tC"
   },
@@ -83,11 +86,20 @@
   "cloudtag": {
     "snap_id": "E8BYCIcV4dognYh2xhMwT9pGseb22X3v"
   },
+  "cncra": {
+    "snap_id": "NplcThd0ztqYfhJLXnYv1bsQVjnDz4cv"
+  },
+  "cnctsun": {
+    "snap_id": "hnj81otl6nhfx3VhPiyprhxNI7iu1i1n"
+  },
   "codebreakers": {
     "snap_id": "9RHGBFG3a83SavexQGzNT8BHMCSfZ3CN"
   },
   "codenamelt": {
     "snap_id": "i1aW8ePSsIMC1vVlMuX5WAUJ5aIkhkcx"
+  },
+  "colibri": {
+    "snap_id": "I3yVoKmoGmLyjY17tFBQ1M6dBkrQBdFx"
   },
   "conjure-up": {
     "snap_id": "ijQR4HjYlTAmIjELJm5XCpNAqbDZWJ3h"
@@ -266,6 +278,9 @@
   "imagenes": {
     "snap_id": "jApatSZjsz1xfkCWNJzIs62HImA0nTx7"
   },
+  "imaginary-teleprompter": {
+    "snap_id": "SrgHhJOFsFIhjna3HHJOwPOC1jrRpVGA"
+  },
   "inkscape": {
     "snap_id": "tIrcA87dMWthuDORCCRU0VpidK5SBVOc"
   },
@@ -304,6 +319,9 @@
   },
   "kotlin-native": {
     "snap_id": "lU9St6ghJO84kloiAqqbldib6zONASSy"
+  },
+  "lepton": {
+    "snap_id": "9HtCEV6aJu7P0Zzdc6KmGKK6BEerfl0E"
   },
   "libreoffice": {
     "snap_id": "CpUkI0qPIIBVRsjy49adNq4D6Ra72y4v"
@@ -425,6 +443,9 @@
   "parity": {
     "snap_id": "bieiRC1Xw5WqMS1Z2V8iY4MmOh3gdNtX"
   },
+  "pdfmixtool": {
+    "snap_id": "5FAIwHwPfo5L5YpKV8N81qUkst6vcjU8"
+  },
   "peek": {
     "snap_id": "vwuGsz3C8WZOc4QYavfmQKh4BKyow8wa"
   },
@@ -524,6 +545,9 @@
   "sdlpop": {
     "snap_id": "gmEYI3Be1Sbo0OSVdOrYDOHFuYrnLKvh"
   },
+  "sftpclient": {
+    "snap_id": "zubFkh5klvQRYScgi5lpKLWF87AKDitQ"
+  },
   "shattered-pixel-dungeon": {
     "snap_id": "mMT5CetV8KkEPI0wYNKe5I1CGONDVB0B"
   },
@@ -568,6 +592,9 @@
   },
   "spotify": {
     "snap_id": "pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7"
+  },
+  "starruler2": {
+    "snap_id": "SJa6RDP1LVtHMkJG56zPKTb9bn6mkdhW"
   },
   "stress-ng": {
     "snap_id": "YMJsyW4vySPdys8BCA7jx8UiOVSVhUT6"
