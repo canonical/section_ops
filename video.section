@@ -1,12 +1,14 @@
 vlc
-obs-studio
-ffmpeg
-# mpv only in beta & edge
-simplescreenrecorder
 shotcut
+ffmpeg
+mpv
+simplescreenrecorder
+obs-studio
 matroska-tools
 livetuner
 handbrake-jz
 gifcurry
 animationmaker
 vidcutter
+imaginary-teleprompter
+smartscreen

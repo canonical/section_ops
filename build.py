@@ -22,12 +22,12 @@ def get_snap_id(name):
 
     logger.info('Resolving {} ...'.format(name))
     headers = {
-        'X-Ubuntu-Series': '16',
+        'Snap-Device-Series': '16',
     }
-    url = 'https://api.snapcraft.io/api/v1/snaps/details/{}'.format(name)
+    url = 'https://api.snapcraft.io/v2/snaps/info/{}'.format(name)
     r = requests.get(url, headers=headers)
 
-    snap_id = r.json()['snap_id']
+    snap_id = r.json()['snap-id']
     name_cache.setdefault(name, {})['snap_id'] = snap_id
 
     return snap_id

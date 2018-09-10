@@ -1,5 +1,8 @@
 remmina
 bitwarden
+gnome-system-monitor
+speedy-duplicate-finder
+easy-disk-cleaner
 mumble
 qalculate
 ghex-udt
@@ -13,11 +16,6 @@ cloudtag
 snapdiff
 hollywood
 rclone
-gnome-system-monitor
-speedy-duplicate-finder
-easy-disk-cleaner
-irssi
-mutt
 fkill
 syncthing
 zeronet
@@ -30,3 +28,11 @@ pulsemixer
 fast
 tio
 mapscii
+communitheme
+sftpclient
+filebot
+bw
+serve
+wallpaperdownloader
+slcli
+lnav
