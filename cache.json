@@ -41,6 +41,9 @@
   "baugeschichte": {
     "snap_id": "NBgVvJA8YouvrkJw6OEuFDVe0d75UnxH"
   },
+  "bisq-desktop": {
+    "snap_id": "mDnhdVkfUMPa1ZQZwsyG1m4bBw3kI3Og"
+  },
   "bitcoin": {
     "snap_id": "GCxpYnjFpWcHZ410SZhPNrdhjNTGzr7Y"
   },
@@ -68,8 +71,14 @@
   "bunqdesktop": {
     "snap_id": "j13u7IohNQx8BRAxE5KR0R1EtuB13k35"
   },
+  "bw": {
+    "snap_id": "n0XNnJXxSdYYHRYwtfYV2mBSkzH1Fbkn"
+  },
   "canonical-livepatch": {
     "snap_id": "b96UJ4vttpNhpbaCWctVzfduQcPwQ5wn"
+  },
+  "caprine": {
+    "snap_id": "UluDLd64Rry6IYTesGapYwu8sfuZmwbu"
   },
   "castersoundboard": {
     "snap_id": "YVLw9cnCBmE3z0gJ6tvzVE8msDzlZaQR"
@@ -100,6 +109,9 @@
   },
   "colibri": {
     "snap_id": "I3yVoKmoGmLyjY17tFBQ1M6dBkrQBdFx"
+  },
+  "communitheme": {
+    "snap_id": "Yd6CISPIf6tEf3ZEJ0cqSoEg9rG2VkRi"
   },
   "conjure-up": {
     "snap_id": "ijQR4HjYlTAmIjELJm5XCpNAqbDZWJ3h"
@@ -179,6 +191,9 @@
   "etcd": {
     "snap_id": "TKebVGcPeDKoOqAmNmczU2oWLtsojKD5"
   },
+  "eureka-doom-editor": {
+    "snap_id": "XwkoAKvXBJIZYeYJJ6DjweEWEu8fcplv"
+  },
   "fast": {
     "snap_id": "FgcgRUqhBV8FZRjSPJVYo9tngNdPyZEh"
   },
@@ -187,6 +202,9 @@
   },
   "ffmpeg": {
     "snap_id": "Ee7LGphwQR669pcfCCdl0oJQouta69to"
+  },
+  "filebot": {
+    "snap_id": "JlrNGBIqwjdB64Hq94WTbELDWCjFwhta"
   },
   "firefox": {
     "snap_id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk"
@@ -197,11 +215,17 @@
   "flock-chat": {
     "snap_id": "RBLtlqxgH513fSuy0HosnfgtjYHWRVm0"
   },
+  "foobar2000": {
+    "snap_id": "2OjKSNHeG48Zvxoj8dGmSVeRo9Rih1UT"
+  },
   "forkstat": {
     "snap_id": "8WVGSM5EfcMfWhH2hQa3J3AlhFrLYHxa"
   },
   "freemind": {
     "snap_id": "0mjPwlDjEHOBCnbe9UtO0o5ODb92ljHY"
+  },
+  "fromscratch": {
+    "snap_id": "686F03NoTBRpPHLnM0ZFs7LP4HWL18kw"
   },
   "get-iplayer": {
     "snap_id": "KFpiyRyf3GYcvw8yWZzqf3WLhd0yADIM"
@@ -217,6 +241,9 @@
   },
   "gimp": {
     "snap_id": "KDHYbyuzZukmLhiogKiUksByRhXD2gYV"
+  },
+  "git-cola": {
+    "snap_id": "PXfuqn22GScJ9wUVqvGaDEhQv8a27nYI"
   },
   "gitkraken": {
     "snap_id": "aWUrHnWTzA1R71VuWsBG5v8S0ibIxmjR"
@@ -302,8 +329,14 @@
   "irssi": {
     "snap_id": "Qdbh7cyFD0DTQeeqqji0yWo90oMx4pnj"
   },
+  "jgalaxian": {
+    "snap_id": "9jo839FX6dw8pXEtEbEzQluiNZonRLAb"
+  },
   "juju": {
     "snap_id": "e2CPHpB1fUxcKtCyJTsm5t3hN9axJ0yj"
+  },
+  "kata-containers": {
+    "snap_id": "oTlBRwmiNP4yYPYhhAipQPZ5RPvOpuOm"
   },
   "keepalived": {
     "snap_id": "V4Z90JuG4d64ycAAl948fM4vWQA9594q"
@@ -334,6 +367,9 @@
   },
   "livetuner": {
     "snap_id": "DZM0WbwmO9WXRQtxLlVsy2a7lBWvWaL5"
+  },
+  "lnav": {
+    "snap_id": "bvyAQPLQsJ9uU4NXDE6bJZ2hkus4GwGb"
   },
   "lxd": {
     "snap_id": "J60k4JY0HppjwOjW8dZdYc8obXKxujRu"
@@ -368,11 +404,20 @@
   "minidlna-escoand": {
     "snap_id": "pCSVMU1bUNCUbH0bAszxzXtMFxGYQMlp"
   },
+  "minizinc": {
+    "snap_id": "E4bbbVlRfNC4JW8qZPQmWoD08UYWYlBz"
+  },
+  "mmapper": {
+    "snap_id": "ODgAs3l9ijzncoY6kZGaCvjReBFdtfTk"
+  },
   "mosquitto": {
     "snap_id": "mDxT0cGOHKSs62MOHSK5Ype0Na5UU2LB"
   },
   "mountain-tapir": {
     "snap_id": "JIqwEX7bcfxP2gTieY7Lxr91URnXhWE7"
+  },
+  "mpv": {
+    "snap_id": "pWEnXeREW6wdUrc1yMCRXQkuDx3L9f9s"
   },
   "mrrescue": {
     "snap_id": "lpYUqP4NUoa52wvQGcVEPJrUGOjdHzY4"
@@ -452,6 +497,9 @@
   "pencilsheep": {
     "snap_id": "cuvDnClk3NZwyHOn9oWNfyn0K3BMo6H0"
   },
+  "pendulums": {
+    "snap_id": "IOwGeIvSMdEdwPMfPDw6CznQWA3e7duf"
+  },
   "photoscape": {
     "snap_id": "ID8dmjQTxpgM2DB7nty1nj4rzh9SRkby"
   },
@@ -466,6 +514,9 @@
   },
   "play0ad": {
     "snap_id": "kuy6PEXtAFBPrp65dPXcTJ3dx1SM902R"
+  },
+  "poedit": {
+    "snap_id": "OToGMGeKaThMqi7qtSO5rmMcUC4BGLHH"
   },
   "polarr": {
     "snap_id": "oOxiekhc2pVHoTfGudxNM0xNUEJWG5jD"
@@ -515,6 +566,9 @@
   "reden": {
     "snap_id": "DMZr8BXKMLYDsHmx13LHSdXX77Z6A3Uz"
   },
+  "redis-desktop-manager": {
+    "snap_id": "Iw3a6EauULwaud5DO0ixtrJg8o6VXaey"
+  },
   "remmina": {
     "snap_id": "XC73ux8XOHjoahd9keAyvM3LVkPBLTzy"
   },
@@ -544,6 +598,9 @@
   },
   "sdlpop": {
     "snap_id": "gmEYI3Be1Sbo0OSVdOrYDOHFuYrnLKvh"
+  },
+  "serve": {
+    "snap_id": "vqLfBn5vi0SFgHWvaKglLBYd0m6YZrFd"
   },
   "sftpclient": {
     "snap_id": "zubFkh5klvQRYScgi5lpKLWF87AKDitQ"
@@ -577,6 +634,12 @@
   },
   "slack-term": {
     "snap_id": "lSFqIFbqUTX2YpTYIyWoVtFjc5sN0FQa"
+  },
+  "slcli": {
+    "snap_id": "OYkSLXVTgJIZh2LgMBwx4v2HDWCfoLaI"
+  },
+  "smartscreen": {
+    "snap_id": "jbcnrbpjgICrTMzBomod7ZjN9aJPixUh"
   },
   "snapdiff": {
     "snap_id": "YnGQB64P0fIojVJ7tzMyswFiWIkeRkeR"
@@ -623,6 +686,9 @@
   "talesofmajeyal": {
     "snap_id": "rL5LA8xrvBd95OYczuFAWk05rUUpB4u9"
   },
+  "taskbook": {
+    "snap_id": "fsERVreEZH6aoBr8gclAjd2iFej23X8N"
+  },
   "teleconsole": {
     "snap_id": "va6EeaPq6HXDUugR7Xm99JZLyOm4IogO"
   },
@@ -653,6 +719,9 @@
   "transitionsdj": {
     "snap_id": "hAS84nY2V1Ip6fu1iEz5cKs19BdBdhyq"
   },
+  "trenchbroom": {
+    "snap_id": "Dj28vlGmc4i6MEstmEHCzN5i1l7oRkZ6"
+  },
   "tusk": {
     "snap_id": "HVJ2ambr66oyGX9hAjvRe4jQi8ngjxMT"
   },
@@ -674,6 +743,9 @@
   "vscode": {
     "snap_id": "XPQdduIwHiDCZvPHRrmsqV7Nr6nQRuqM"
   },
+  "wallpaperdownloader": {
+    "snap_id": "GUTNjfcAL0vHydV8WGIAAmRAfkwuPLUC"
+  },
   "warzone2100": {
     "snap_id": "roFhaRzMw8ted6zNEL8NQnNrkFdIHnHv"
   },
@@ -691,6 +763,9 @@
   },
   "winds": {
     "snap_id": "dBscTsMVtrP2CzGQgZbzn13UdTB9h79U"
+  },
+  "wire": {
+    "snap_id": "FD40VzRNQStdJeyWS6kP3l4peXFteavo"
   },
   "wordpress-desktop": {
     "snap_id": "JTB9j22bubJxMtkh56txeodPvguTmSys"
