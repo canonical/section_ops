@@ -167,6 +167,9 @@
   "doctl": {
     "snap_id": "37RaX7lHS7bKamfcFcXcx27EyAaCIzgG"
   },
+  "domotzpro-agent-publicstore": {
+    "snap_id": "YKK8n2wMJikrafz0jGwimYMOAPYHpays"
+  },
   "dosbox-x": {
     "snap_id": "ogcav3zrjqBXdDx8ofgJYMEPSLVRs9ID"
   },
@@ -514,6 +517,9 @@
   },
   "play0ad": {
     "snap_id": "kuy6PEXtAFBPrp65dPXcTJ3dx1SM902R"
+  },
+  "plexmediaserver": {
+    "snap_id": "85SmCU9pNtVq5DHmKJwbZsgbNqkG7wPR"
   },
   "poedit": {
     "snap_id": "OToGMGeKaThMqi7qtSO5rmMcUC4BGLHH"
