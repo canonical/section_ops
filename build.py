@@ -89,7 +89,6 @@ def main():
         snaps = []
         for i, snap_id in enumerate(snap_ids):
             snap = {
-                'series': '16',
                 'snap_id': snap_id,
                 'featured': i < 20,
                 'score': len(snap_ids) - i,
@@ -119,8 +118,7 @@ def main():
             continue
         delete_payload['sections'].append({
             'section_name': section_name,
-            'snaps': [
-                {'series': '16', 'snap_id': s} for s in sorted(snap_ids)],
+            'snaps': [{'snap_id': s} for s in sorted(snap_ids)],
         })
 
     if delete_payload['sections']:
