@@ -10,7 +10,7 @@ mosquitto
 etcd
 powershell
 stress-ng
-sabnzb
+sabnzbd
 wormhole
 aws-cli
 doctl
