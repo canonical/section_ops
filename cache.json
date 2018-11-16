@@ -35,6 +35,9 @@
   "aws-cli": {
     "snap_id": "CRrJViJiSuDcCkU31G0xpNRVNaj4P960"
   },
+  "balloon-pop": {
+    "snap_id": "VTajrbgnlVDoEdiVudVxWs2k9p96ijIL"
+  },
   "bash-shell-rpg": {
     "snap_id": "O4NDMM6IIZessXIsaak9cl5J9NQuKJUC"
   },
@@ -65,6 +68,9 @@
   "brave": {
     "snap_id": "uE3hSmGE91m9MpbDEnUWi2vpeumH6gmv"
   },
+  "bubble-pop": {
+    "snap_id": "zdZwu9EBLdOrXHLm25Dd3kfPyqcWAYbN"
+  },
   "buka": {
     "snap_id": "LUXVl1kLeXV45liQcKVcopekmo2yRk4f"
   },
@@ -73,6 +79,9 @@
   },
   "bw": {
     "snap_id": "n0XNnJXxSdYYHRYwtfYV2mBSkzH1Fbkn"
+  },
+  "cacher": {
+    "snap_id": "pMUR6qRuWr9e27PjueEhsQnsYdUg4ute"
   },
   "canonical-livepatch": {
     "snap_id": "b96UJ4vttpNhpbaCWctVzfduQcPwQ5wn"
@@ -115,6 +124,9 @@
   },
   "conjure-up": {
     "snap_id": "ijQR4HjYlTAmIjELJm5XCpNAqbDZWJ3h"
+  },
+  "connect4": {
+    "snap_id": "J1Ci6MKqYCMdyvHddmESY47NK6HJfewB"
   },
   "convos": {
     "snap_id": "hlDnZhhos1kPWFfcJh4xFG9hmXdtVXEx"
@@ -197,6 +209,9 @@
   "eureka-doom-editor": {
     "snap_id": "XwkoAKvXBJIZYeYJJ6DjweEWEu8fcplv"
   },
+  "explode-bricks": {
+    "snap_id": "BGshNgmpOkzR0ZfGNkoKOYucS39LdZCI"
+  },
   "fast": {
     "snap_id": "FgcgRUqhBV8FZRjSPJVYo9tngNdPyZEh"
   },
@@ -224,6 +239,9 @@
   "forkstat": {
     "snap_id": "8WVGSM5EfcMfWhH2hQa3J3AlhFrLYHxa"
   },
+  "freecell-solitaire": {
+    "snap_id": "DHcY0pynB4EcKkmEE1CedN47R6PUID0I"
+  },
   "freemind": {
     "snap_id": "0mjPwlDjEHOBCnbe9UtO0o5ODb92ljHY"
   },
@@ -241,6 +259,9 @@
   },
   "gifcurry": {
     "snap_id": "UUaICqxIYfkJcPPaOOMdei9GTlkS4zLN"
+  },
+  "giganotes": {
+    "snap_id": "cI9TedCraDMoLleWyxsijOb632s29OZx"
   },
   "gimp": {
     "snap_id": "KDHYbyuzZukmLhiogKiUksByRhXD2gYV"
@@ -287,8 +308,14 @@
   "gravit-designer": {
     "snap_id": "ue21otCteSEE9nQQPHYljra6xI39DI1t"
   },
+  "grv": {
+    "snap_id": "8lJp1L59BaKH3KuYzSqS8wFsBho3DT7K"
+  },
   "handbrake-jz": {
     "snap_id": "FEwKNHxQ7LVb0P1SBvpO0toetKhbvqvy"
+  },
+  "heimer": {
+    "snap_id": "ASguEDsS8km7u5aNt6TOnaKFFUlytZum"
   },
   "heroku": {
     "snap_id": "pAGMQ0HpmF09Smxc9d3ZOUiVNhtWhy7r"
@@ -301,6 +328,9 @@
   },
   "htop": {
     "snap_id": "hJmReLmgXSUj4SF7WhyTVRV6IzUa4QUZ"
+  },
+  "hub": {
+    "snap_id": "oaQHXl9Nl2aedf7khkmFg2dyi299y9U0"
   },
   "hugo": {
     "snap_id": "t6YzDBM3com27avINGL5OD6ZKKG654ez"
@@ -368,6 +398,9 @@
   "links": {
     "snap_id": "XwrNY1ywHBH1BLx60DcXsPOU0xketHwh"
   },
+  "linode-cli": {
+    "snap_id": "O8XtTDc7vpFnamWNgjL5L7ML3WIzn939"
+  },
   "livetuner": {
     "snap_id": "DZM0WbwmO9WXRQtxLlVsy2a7lBWvWaL5"
   },
@@ -376,6 +409,9 @@
   },
   "lxd": {
     "snap_id": "J60k4JY0HppjwOjW8dZdYc8obXKxujRu"
+  },
+  "mahjong-game": {
+    "snap_id": "TeGtzxaruUPdb6MLCiPgtRdrJCZhyFKU"
   },
   "mailspring": {
     "snap_id": "0TyNxgP6wEM3nTXzymtc1wOnvl2P6Iij"
@@ -401,6 +437,9 @@
   "minecraft": {
     "snap_id": "aJQRf6WPQq04DH0TB2HdTB6K9rf6I1yX"
   },
+  "minesweeper": {
+    "snap_id": "rm5Zu28T32iiPWLHdWT97KlPigCfNhQo"
+  },
   "minetest": {
     "snap_id": "DtXxirDGfOc8LeUJVENXGTir4Oq0F7Ts"
   },
@@ -412,6 +451,9 @@
   },
   "mmapper": {
     "snap_id": "ODgAs3l9ijzncoY6kZGaCvjReBFdtfTk"
+  },
+  "monento": {
+    "snap_id": "SHIWnNSfAS4LIqnHmGY6tcn08kKkCovj"
   },
   "mosquitto": {
     "snap_id": "mDxT0cGOHKSs62MOHSK5Ype0Na5UU2LB"
@@ -515,6 +557,9 @@
   "pin-town": {
     "snap_id": "8ZiDCAC7uIH80MIQzZDRgGNtjQCoASFU"
   },
+  "pivx": {
+    "snap_id": "jTBnCMtrkc7KysHZKE28UiBaRlCbasc1"
+  },
   "play0ad": {
     "snap_id": "kuy6PEXtAFBPrp65dPXcTJ3dx1SM902R"
   },
@@ -523,6 +568,9 @@
   },
   "poedit": {
     "snap_id": "OToGMGeKaThMqi7qtSO5rmMcUC4BGLHH"
+  },
+  "polar-bookshelf": {
+    "snap_id": "Zq980ZHa2SkXb3tHKJKS529R2Xqdf29f"
   },
   "polarr": {
     "snap_id": "oOxiekhc2pVHoTfGudxNM0xNUEJWG5jD"
@@ -581,6 +629,9 @@
   "retroarch": {
     "snap_id": "7xMPaiM3yBx0npSKPNuTYNhzW4xI9CDk"
   },
+  "reversu": {
+    "snap_id": "AphS012Wo1OIXqVp62XKDNJlQP8gouOc"
+  },
   "rocketchat-desktop": {
     "snap_id": "G4dFdVrFArll5teSvqpgWfRXIMGjME0l"
   },
@@ -593,8 +644,14 @@
   "rokuterm": {
     "snap_id": "C8Snu9zjZCV5EM8MgCP6WQA5WBaid5UV"
   },
+  "ruby": {
+    "snap_id": "RjAgguCDAawLSJ3IByPe0R92xlNtrfGt"
+  },
   "rubymine": {
     "snap_id": "1PWZ4ToZh4kt4p67xA2vSvAKvIe3YqbP"
+  },
+  "sabnzbd": {
+    "snap_id": "xbKFilZvKsEXegCPaOjd0eN7qucKsM92"
   },
   "safex-wallet": {
     "snap_id": "Hrd1DAfI4xM6lUVoQjwk9LFLp1TKhPZN"
@@ -659,6 +716,9 @@
   "spelunky": {
     "snap_id": "HezJbwXZRVwO5jsliYx2WCwelWLkWuBW"
   },
+  "spider-solitaire": {
+    "snap_id": "m3HW4jJVWoarvEwVU2SdjE8s9KD7W2CI"
+  },
   "spotify": {
     "snap_id": "pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7"
   },
@@ -703,6 +763,9 @@
   },
   "termius-app": {
     "snap_id": "WkTBXwoX81rBe3s3OTt3EiiLKBx2QhuS"
+  },
+  "tic-tac-toe": {
+    "snap_id": "dlcRR1eTXTuDPAs52Y4JGd34Wx8Dlfnf"
   },
   "tiled": {
     "snap_id": "rqLaGwUxwsLj0suadyXMIuue1Vv5SuaJ"
