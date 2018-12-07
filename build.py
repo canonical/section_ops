@@ -3,8 +3,11 @@
 
 import argparse
 import os
+import itertools
 import json
 import logging
+import sys
+import time
 
 import requests
 
@@ -33,31 +36,55 @@ def get_snap_id(name):
     return snap_id
 
 
+def get_promoted_snaps():
+    snaps = []
+    headers = {
+        'X-Ubuntu-Series': '16',
+    }
+
+    url = (
+        'https://api.snapcraft.io/api/v1/snaps/search'
+        '?size=250&scope=wide&arch=wide&confinement=strict,classic,devmode&'
+        'promoted=true&fields=snap_id,sections'
+    )
+
+    while url is not None:
+        # ensure cache is busted when fetching promoted.
+        cachebust= '&x=%s' % int(time.time())
+        r = requests.get(url + cachebust, headers=headers)
+        r.raise_for_status()
+        payload = r.json()
+        sys.stderr.write('.')
+        sys.stderr.buffer.flush()
+        snaps.extend(payload['_embedded']['clickindex:package'])
+
+        _next = payload['_links'].get('next')
+        url = _next['href'] if _next is not None else None
+
+    return snaps
+
+
 def main():
     parser = argparse.ArgumentParser(
         description='Section Operations ...'
     )
     args = parser.parse_args()
 
-    current_sections = {}
-    if not os.path.exists('current.json'):
-        logger.warning('Could not find "current.json" ¯\_(ツ)_/¯ ...')
-        logger.warning('Generate it from the snapfind instance:')
-        logger.warning('')
-        logger.warning("  $ curl http://localhost:8003/sections/snaps | "
-                       "jq '.' > /tmp/current.json")
-        logger.warning('')
-        logger.warning('Otherwise deletions cannot be calculated.')
-    else:
-        try:
-            with open('current.json') as fd:
-                payload = json.load(fd)
-                current_sections = {
-                    item['section_name']: [s['snap_id'] for s in item['snaps']]
-                    for item in payload['sections']}
-        except json.decoder.JSONDecodeError:
-            logger.error('Could not parse {!r}'.format(args.current))
-            return
+    logger.info('Fetching all currently promoted snaps.')
+    promoted = get_promoted_snaps()
+    sections_by_name = {}
+    for snap in promoted:
+        for section in snap['sections']:
+            name = section['name']
+            snaps = sections_by_name.setdefault(name, [])
+            snaps.append({
+                'snap_id': snap['snap_id'],
+                'featured': section['featured'],
+            })
+
+    current_sections = {
+        section_name: [s['snap_id'] for s in snaps]
+        for section_name, snaps in sections_by_name.items()}
 
     logger.info('Processing new sections ...')
     new_sections = {}
