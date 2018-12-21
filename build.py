@@ -61,6 +61,8 @@ def get_promoted_snaps():
         _next = payload['_links'].get('next')
         url = _next['href'] if _next is not None else None
 
+    sys.stderr.write('\n')
+    sys.stderr.buffer.flush()
     return snaps
 
 
@@ -143,10 +145,12 @@ def main():
             set(new_sections[section_name]))
         if not snap_ids:
             continue
-        delete_payload['sections'].append({
-            'section_name': section_name,
-            'snaps': [{'snap_id': s} for s in sorted(snap_ids)],
-        })
+        # Only prune `featured` section, because it's not self-served
+        if section_name == 'featured':
+            delete_payload['sections'].append({
+                'section_name': section_name,
+                'snaps': [{'snap_id': s} for s in sorted(snap_ids)],
+            })
 
     if delete_payload['sections']:
         logger.info('Saving "delete.json" ...')
