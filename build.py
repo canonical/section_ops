@@ -11,6 +11,12 @@ import time
 
 import requests
 
+# Categories that do not allow self-serving.
+EXCLUSIVE_CATEGORIES = (
+    'featured',
+    'ubuntu-firstrun',
+)
+
 
 logging.basicConfig(format='%(asctime)s %(levelname)-4.4s  %(message)s')
 logger = logging.getLogger(__name__)
@@ -44,7 +50,7 @@ def get_promoted_snaps():
 
     url = (
         'https://api.snapcraft.io/api/v1/snaps/search'
-        '?size=250&scope=wide&arch=wide&confinement=strict,classic,devmode&'
+        '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
         'promoted=true&fields=snap_id,sections'
     )
 
@@ -54,6 +60,7 @@ def get_promoted_snaps():
         r = requests.get(url + cachebust, headers=headers)
         r.raise_for_status()
         payload = r.json()
+
         sys.stderr.write('.')
         sys.stderr.buffer.flush()
         snaps.extend(payload['_embedded']['clickindex:package'])
@@ -74,6 +81,8 @@ def main():
 
     logger.info('Fetching all currently promoted snaps.')
     promoted = get_promoted_snaps()
+    logger.info('Fetched %d snaps.', len(promoted))
+
     sections_by_name = {}
     for snap in promoted:
         for section in snap['sections']:
@@ -114,15 +123,31 @@ def main():
     logger.info('Calculating snap updates ...')
     update_payload = {'sections': []}
     for section_name in sorted(new_sections.keys()):
+        # Build the 'featured-in-category' list.
         snap_ids = new_sections[section_name]
         snaps = []
         for i, snap_id in enumerate(snap_ids):
             snap = {
                 'snap_id': snap_id,
-                'featured': i < 20,
+                'featured': True,
                 'score': len(snap_ids) - i,
             }
             snaps.append(snap)
+
+        # If it is not an exclusive category (see the pruning below),
+        # append the remaining snaps (self-served or un-featured).
+        if section_name not in EXCLUSIVE_CATEGORIES:
+            snap_ids = list(
+                set(current_sections[section_name]) -
+                set(new_sections[section_name]))
+            for snap_id in snap_ids:
+                snap = {
+                    'snap_id': snap_id,
+                    'featured': False,
+                    'score': 0,
+                }
+                snaps.append(snap)
+
         update_payload['sections'].append({
             'section_name': section_name,
             'snaps': snaps,
@@ -140,17 +165,18 @@ def main():
         if section_name not in new_sections.keys():
             delete_sections.append(section_name)
             continue
+        # Only prune exclusive categories.
+        if section_name not in EXCLUSIVE_CATEGORIES:
+            continue
         snap_ids = list(
             set(current_sections[section_name]) -
             set(new_sections[section_name]))
         if not snap_ids:
             continue
-        # Only prune `featured` section, because it's not self-served
-        if section_name == 'featured':
-            delete_payload['sections'].append({
-                'section_name': section_name,
-                'snaps': [{'snap_id': s} for s in sorted(snap_ids)],
-            })
+        delete_payload['sections'].append({
+            'section_name': section_name,
+            'snaps': [{'snap_id': s} for s in sorted(snap_ids)],
+        })
 
     if delete_payload['sections']:
         logger.info('Saving "delete.json" ...')
