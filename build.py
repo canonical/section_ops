@@ -17,6 +17,9 @@ EXCLUSIVE_CATEGORIES = (
     'ubuntu-firstrun',
 )
 
+# Number of entries (snaps) marked as "featured" within each section.
+N_FEATURED = 20
+
 
 logging.basicConfig(format='%(asctime)s %(levelname)-4.4s  %(message)s')
 logger = logging.getLogger(__name__)
@@ -62,14 +65,14 @@ def get_promoted_snaps():
         payload = r.json()
 
         sys.stderr.write('.')
-        sys.stderr.buffer.flush()
+        sys.stderr.flush()
         snaps.extend(payload['_embedded']['clickindex:package'])
 
         _next = payload['_links'].get('next')
         url = _next['href'] if _next is not None else None
 
     sys.stderr.write('\n')
-    sys.stderr.buffer.flush()
+    sys.stderr.flush()
     return snaps
 
 
@@ -127,10 +130,11 @@ def main():
         snap_ids = new_sections[section_name]
         snaps = []
         for i, snap_id in enumerate(snap_ids):
+            featured = i < N_FEATURED
             snap = {
                 'snap_id': snap_id,
-                'featured': True,
-                'score': len(snap_ids) - i,
+                'featured': featured,
+                'score': N_FEATURED - i if featured else 0,
             }
             snaps.append(snap)
 
