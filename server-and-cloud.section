@@ -40,3 +40,14 @@ postgresql10
 postgresql-pgbouncer
 postgresql95-pgpool2-35
 postgresql95-pgpool2-36
+# orphans
+moauth
+tika-server
+netvirt-agent2
+cast-web-api
+shell2http
+keycloak-standalone-spicule
+goaccess-cprov
+vapor-master
+h2static
+little-orange-display

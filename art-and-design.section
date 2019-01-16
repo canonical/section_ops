@@ -10,7 +10,7 @@ animationmaker
 gifcurry
 mtpaint-casept
 openscad-nightly
-krita
+# krita -- private
 darktable
 darktable-kyrofa
 pencilsheep
@@ -21,3 +21,7 @@ gravit-designer
 goxel
 bobrossquotes
 kolourpaint
+# orphans
+imeditor
+dosage
+coulr
