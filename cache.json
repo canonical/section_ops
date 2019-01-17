@@ -734,6 +734,9 @@
   "john-the-ripper": {
     "snap_id": "TACZTA4fOteK0kPG0sjr3h1nzC0mPq2c"
   },
+  "journey": {
+    "snap_id": "TWwObnuGiM3Urabc9hR2Xg2bJs6J8f2Y"
+  },
   "juju": {
     "snap_id": "e2CPHpB1fUxcKtCyJTsm5t3hN9axJ0yj"
   },
@@ -1237,6 +1240,9 @@
   },
   "paintsupreme-3d": {
     "snap_id": "F3FwHKjIhKuCWR2cygfRNAhoGppsRRt6"
+  },
+  "paradrop-agent": {
+    "snap_id": "EQMWFJmChQFXYSZ84X9llemoyIPe7shC"
   },
   "parity": {
     "snap_id": "bieiRC1Xw5WqMS1Z2V8iY4MmOh3gdNtX"
