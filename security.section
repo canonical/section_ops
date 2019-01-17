@@ -1,9 +1,8 @@
 canonical-livepatch
+tor
 keepassxc
 bitwarden
-tor
 tor-middle-relay
-easy-openvpn
 nmap
 riseup-vpn
 ufw
@@ -16,8 +15,6 @@ amass
 nitrokey-app
 ngrok
 vault
-vault-elopio
-vault-dmitriis
 stunnel5
 sshesame
 sshoot
@@ -27,3 +24,4 @@ ike-qt
 tunnel
 brook
 overpass
+easy-openvpn
