@@ -45,21 +45,6 @@ def get_snap_id(name):
     return snap_id
 
 
-def get_snap_name(snap_id):
-    id_cache = {v['snap_id']: k for k, v in name_cache.items()}
-    if id_cache.get(snap_id) is not None:
-        return id_cache[snap_id]
-
-    url = ('https://api.snapcraft.io/api/v1/snaps/assertions/'
-           'snap-declaration/16/{}'.format(snap_id))
-    r = requests.get(url)
-
-    name = r.json()['headers']['snap-name']
-    name_cache.setdefault(name, {})['snap_id'] = snap_id
-
-    return name
-
-
 def get_promoted_snaps():
     snaps = []
     headers = {
@@ -107,6 +92,7 @@ def main():
             snaps = sections_by_name.setdefault(name, [])
             snaps.append({
                 'snap_id': snap['snap_id'],
+                'name': snap['package_name'],
                 'featured': section['featured'],
             })
     # Cannot properly score results.
@@ -222,6 +208,10 @@ def main():
         for section in update_payload['sections']:
             updated_snaps.extend(s['snap_id'] for s in section['snaps'])
 
+        promoted_by_snap_id = {}
+        for snaps in sections_by_name.values():
+            promoted_by_snap_id.update({s['snap_id']: s['name'] for s in snaps})
+
         for n in delete_sections:
             dead_ids = [
                 snap_id for snap_id in current_sections.get(n, [])
@@ -230,7 +220,7 @@ def main():
                 continue
             print('  Orphan assignments from "{}":'.format(n))
             for s in dead_ids:
-                print('  - {}'.format(get_snap_name(s)))
+                print('  - {}'.format(promoted_by_snap_id.get(s, s)))
     print(72 * '=')
 
 
