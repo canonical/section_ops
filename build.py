@@ -85,7 +85,6 @@ def main():
     logger.info('Fetching all currently promoted snaps.')
     promoted = get_promoted_snaps()
     logger.info('Fetched %d snaps.', len(promoted))
-
     sections_by_name = {}
     for snap in promoted:
         for section in snap['sections']:
@@ -93,9 +92,10 @@ def main():
             snaps = sections_by_name.setdefault(name, [])
             snaps.append({
                 'snap_id': snap['snap_id'],
+                'name': snap['package_name'],
                 'featured': section['featured'],
             })
-
+    # Cannot properly score results.
     current_sections = {
         section_name: [s['snap_id'] for s in snaps]
         for section_name, snaps in sections_by_name.items()}
@@ -142,8 +142,8 @@ def main():
         # append the remaining snaps (self-served or un-featured).
         if section_name not in EXCLUSIVE_CATEGORIES:
             snap_ids = list(
-                set(current_sections[section_name]) -
-                set(new_sections[section_name]))
+                set(current_sections.get(section_name, [])) -
+                set(new_sections.get(section_name, [])))
             for snap_id in snap_ids:
                 snap = {
                     'snap_id': snap_id,
@@ -198,17 +198,29 @@ def main():
               "http://localhost:8003/sections/snaps -d '@delete.json'")
     print("  $ curl -X POST -H 'Content-Type: application/json' "
           "http://localhost:8003/sections/snaps -d '@update.json'")
+
     if delete_sections:
         print('  $ psql <production_dsn> -c "DELETE FROM section WHERE '
               'name IN ({});"'
               .format(', '.join([repr(s) for s in delete_sections])))
-    print()
-    print('In case you screwed things up, copy "current.json" to a snapfind '
-          'instance. Then run the following commands:')
-    print()
-    print('  $ psql <production_dsn> -c "DELETE FROM section;"')
-    print("  $ curl -X POST -H 'Content-Type: application/json' "
-          "http://localhost:8003/sections/snaps -d '@current.json'")
+
+        updated_snaps = []
+        for section in update_payload['sections']:
+            updated_snaps.extend(s['snap_id'] for s in section['snaps'])
+
+        promoted_by_snap_id = {}
+        for snaps in sections_by_name.values():
+            promoted_by_snap_id.update({s['snap_id']: s['name'] for s in snaps})
+
+        for n in delete_sections:
+            dead_ids = [
+                snap_id for snap_id in current_sections.get(n, [])
+                if snap_id not in updated_snaps]
+            if not dead_ids:
+                continue
+            print('  Orphan assignments from "{}":'.format(n))
+            for s in dead_ids:
+                print('  - {}'.format(promoted_by_snap_id.get(s, s)))
     print(72 * '=')
 
 
