@@ -518,6 +518,9 @@
   "g-calendar": {
     "snap_id": "Sl5oKF1g29hoy9uVmYR2PanvhX2Gx3EA"
   },
+  "gaia": {
+    "snap_id": "QDHowuygjrPTz2LsOsuCp7tTG1ThsERZ"
+  },
   "game-2048": {
     "snap_id": "YIt6BsVGvY97UjtuW2qf1tfpqI6JIApN"
   },
@@ -832,6 +835,9 @@
   },
   "kmplot": {
     "snap_id": "N7adG8PJBGykmGcFsNeOUeD20O1dmNjs"
+  },
+  "knctl": {
+    "snap_id": "uDv3LmaghQdPexvJOhp05kxgCHFlRcCt"
   },
   "kodi": {
     "snap_id": "OslhkNsr8f2ljjabZYAGChPBqxGWJ8cY"
