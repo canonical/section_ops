@@ -191,6 +191,9 @@
   "cdk-addons": {
     "snap_id": "eeEICnDiB3tj94pKQM1BwtEcvVgHe95n"
   },
+  "cheat": {
+    "snap_id": "tTBqYakHg3mCU6zTnRTXkOW0UYutqiaJ"
+  },
   "chromium": {
     "snap_id": "XKEcBqPM06H1Z7zGOdG5fbICuf8NWK5R"
   },
@@ -515,6 +518,9 @@
   "functy": {
     "snap_id": "4bQDp2GGalO7eBz59NLKoEdZTdmzsd7j"
   },
+  "fx": {
+    "snap_id": "5EKjbF0b4msQgB81xjeVEim3DwQK4mxV"
+  },
   "g-calendar": {
     "snap_id": "Sl5oKF1g29hoy9uVmYR2PanvhX2Gx3EA"
   },
@@ -757,6 +763,9 @@
   },
   "irssi": {
     "snap_id": "Qdbh7cyFD0DTQeeqqji0yWo90oMx4pnj"
+  },
+  "iteleport": {
+    "snap_id": "w4lGGrttSoKhGqbPLTc5TLH7qYGAyJhB"
   },
   "ixagent": {
     "snap_id": "ww1sjO0wCtzyIPEtfEUpg4VOAYU6JoQ4"
@@ -1249,6 +1258,9 @@
   },
   "openscad-nightly": {
     "snap_id": "U0G6xWcDnmIByhlnpmuxM2zmzsLwmm60"
+  },
+  "opentoonz": {
+    "snap_id": "HTev6avMc4eUnPNUYlzL2sgmCHcanYNu"
   },
   "openttd-casept": {
     "snap_id": "ZFT6EC3zJ3cQl3Bw7nwInArJ7T0i7zjn"
