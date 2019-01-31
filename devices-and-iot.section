@@ -1,9 +1,11 @@
 mosquitto
 node-red
+edgexfoundry
 mycroft
 soracom-console
 thinger-maker-server
 nymea
+nymea-app
 kura
 hunt-r
 ixagent
@@ -20,3 +22,4 @@ magic-device-tool
 kiosc
 kiosceditor
 rightplayer
+microservicebus-node
