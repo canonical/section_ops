@@ -14,6 +14,7 @@ import requests
 # Categories that do not allow self-serving.
 EXCLUSIVE_CATEGORIES = (
     'featured',
+    'server',
     'ubuntu-firstrun',
 )
 
