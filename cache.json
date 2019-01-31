@@ -410,6 +410,9 @@
   "eclipse": {
     "snap_id": "QzFGHW76hR3cZjpcuHt4sAjj5KZbd05T"
   },
+  "edgexfoundry": {
+    "snap_id": "AZGf0KNnh8aqdkbGATNuRuxnt1GNRKkV"
+  },
   "egmde": {
     "snap_id": "H5IuTmVtH1mtvQFnlUBw4ESa8HuzNyQX"
   },
@@ -1025,6 +1028,9 @@
   "micropolis": {
     "snap_id": "ZOQQAuPhsvlJs67CxxJF69Kqc8wRlAtx"
   },
+  "microservicebus-node": {
+    "snap_id": "jDGjGsKVQ5DNCcfNk1uA109Bj9blJxxN"
+  },
   "midori": {
     "snap_id": "PZyTTgd3zCbAxCcecqeDgeUPItOv58KT"
   },
@@ -1207,6 +1213,9 @@
   },
   "nymea": {
     "snap_id": "vuamj1HCwJHJ1cxi7FAbMxvPyV4ae5qW"
+  },
+  "nymea-app": {
+    "snap_id": "fnmRXQLhvAkrrqMM8TX8R7Lvflt1XF21"
   },
   "oai-cn": {
     "snap_id": "YNQK8kBIKdN4ZtVnNNq24qUN79oqBBEE"
