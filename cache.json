@@ -464,6 +464,9 @@
   "factorio-headless": {
     "snap_id": "t3hW1r6c7hCZ1S9lvGNQh2y8jOLOSGad"
   },
+  "falkon": {
+    "snap_id": "QZefgTHVlLGyIrtQ9iV4Q31RPqWzqpZu"
+  },
   "fast": {
     "snap_id": "FgcgRUqhBV8FZRjSPJVYo9tngNdPyZEh"
   },
@@ -871,6 +874,15 @@
   },
   "kotlin-native": {
     "snap_id": "lU9St6ghJO84kloiAqqbldib6zONASSy"
+  },
+  "kpat": {
+    "snap_id": "znq9z50p0uf4gibTXaoTp0lmDMpt0acw"
+  },
+  "krdc": {
+    "snap_id": "DzjYUtEJNzBRyvKGILqvVsEwYFIUKZ07"
+  },
+  "krita": {
+    "snap_id": "r8Shy9i0XE50a3tUlChg3tvjSeLGJ4Za"
   },
   "krop": {
     "snap_id": "nFlrABRZmqSkMfSxHALszyY5nPLjfMrJ"
@@ -1300,6 +1312,9 @@
   },
   "paintsupreme-3d": {
     "snap_id": "F3FwHKjIhKuCWR2cygfRNAhoGppsRRt6"
+  },
+  "palapeli": {
+    "snap_id": "MJVllp4hpgPcyCRVJaJDuNY3VS60Yot7"
   },
   "paradrop-agent": {
     "snap_id": "EQMWFJmChQFXYSZ84X9llemoyIPe7shC"
