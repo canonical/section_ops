@@ -47,16 +47,28 @@ def get_snap_id(name):
 
 
 def get_promoted_snaps():
-    snaps = []
-    headers = {
-        'X-Ubuntu-Series': '16',
-    }
-
     url = (
         'https://api.snapcraft.io/api/v1/snaps/search'
         '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
         'promoted=true&fields=snap_id,sections'
     )
+    return _walk_through(url)
+
+
+def get_section_snaps(section_name):
+    url = (
+        'https://api.snapcraft.io/api/v1/snaps/search'
+        '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
+        'fields=snap_id&section={}'.format(section_name)
+    )
+    return _walk_through(url)
+
+
+def _walk_through(url):
+    snaps = []
+    headers = {
+        'X-Ubuntu-Series': '16',
+    }
 
     while url is not None:
         # ensure cache is busted when fetching promoted.
@@ -83,10 +95,12 @@ def main():
     )
     args = parser.parse_args()
 
+
+    sections_by_name = {}
+
     logger.info('Fetching all currently promoted snaps.')
     promoted = get_promoted_snaps()
     logger.info('Fetched %d snaps.', len(promoted))
-    sections_by_name = {}
     for snap in promoted:
         for section in snap['sections']:
             name = section['name']
@@ -96,7 +110,22 @@ def main():
                 'name': snap['package_name'],
                 'featured': section['featured'],
             })
-    # Cannot properly score results.
+
+    logger.info('Fetching snaps in hidden sections.')
+    # Skip `featured`, which is not hidden.
+    for name in EXCLUSIVE_CATEGORIES[1:]:
+        logger.info('Fetching snaps for: %s', name)
+        section_snaps = get_section_snaps(name)
+        logger.info('Fetched %d snaps.', len(section_snaps))
+        snaps = sections_by_name.setdefault(name, [])
+        for i, snap in enumerate(section_snaps):
+            snaps.append({
+                'snap_id': snap['snap_id'],
+                'name': snap['package_name'],
+                'featured': i < N_FEATURED,
+            })
+
+    # Cannot properly score results from the 'promoted' set.
     current_sections = {
         section_name: [s['snap_id'] for s in snaps]
         for section_name, snaps in sections_by_name.items()}
