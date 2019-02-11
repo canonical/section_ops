@@ -15,7 +15,6 @@ conjure-up
 minidlna-escoand
 heroku
 keepalived
-amazon-ssm-agent
 prometheus
 juju
 slcli
@@ -30,7 +29,6 @@ robomongo
 minikube
 mysql
 smonitor
-subiquity
 postgresql
 postgresql93
 postgresql94
