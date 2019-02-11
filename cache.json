@@ -83,6 +83,9 @@
   "aws-cli": {
     "snap_id": "CRrJViJiSuDcCkU31G0xpNRVNaj4P960"
   },
+  "azure-cli": {
+    "snap_id": "nqdvXVu9Q4zZllGjdTwd7XbjTzYKT0XU"
+  },
   "b1freearchiver": {
     "snap_id": "hqJvk3FYvc7erEqfH5Yg1XhXYjVNYCTB"
   },

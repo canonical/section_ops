@@ -135,7 +135,8 @@ def main():
             snap = {
                 'snap_id': snap_id,
                 'featured': featured,
-                'score': N_FEATURED - i if featured else 0,
+                # Keep the desired order, even if unfeatured.
+                'score': len(snap_ids) - i,
             }
             snaps.append(snap)
 
