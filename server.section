@@ -3,7 +3,6 @@ nextcloud
 wekan
 kata-containers
 docker
-google-cloud-sdk
 canonical-livepatch
 rocketchat-server
 mosquitto
@@ -13,14 +12,16 @@ stress-ng
 sabnzbd
 wormhole
 aws-cli
+azure-cli
+google-cloud-sdk
+slcli
 doctl
 conjure-up
 minidlna-escoand
 postgresql10
 heroku
 keepalived
-amazon-ssm-agent
 prometheus
 juju
-slcli
+
 
