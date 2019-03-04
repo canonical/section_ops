@@ -206,6 +206,9 @@
   "castersoundboard": {
     "snap_id": "YVLw9cnCBmE3z0gJ6tvzVE8msDzlZaQR"
   },
+  "cavestory": {
+    "snap_id": "EJenKZWelQKsCBCoyuJl1uTfiU17MKjJ"
+  },
   "cdk-addons": {
     "snap_id": "eeEICnDiB3tj94pKQM1BwtEcvVgHe95n"
   },
@@ -524,6 +527,9 @@
   "foobar2000": {
     "snap_id": "2OjKSNHeG48Zvxoj8dGmSVeRo9Rih1UT"
   },
+  "foobillard-plus": {
+    "snap_id": "HH3gK5Aa0Xbqsv9kN5I56Awp9gue3LaV"
+  },
   "forkstat": {
     "snap_id": "8WVGSM5EfcMfWhH2hQa3J3AlhFrLYHxa"
   },
@@ -547,6 +553,9 @@
   },
   "functy": {
     "snap_id": "4bQDp2GGalO7eBz59NLKoEdZTdmzsd7j"
+  },
+  "fuzzy-repo-finder": {
+    "snap_id": "XQfuNyKP6LklI2z9ZBvd02bLEfd8fmvc"
   },
   "fx": {
     "snap_id": "5EKjbF0b4msQgB81xjeVEim3DwQK4mxV"
@@ -1160,6 +1169,9 @@
   "mapscii": {
     "snap_id": "YmktiCRE0Dg3FvsSwXiNFHeygSzRtyIo"
   },
+  "mari0": {
+    "snap_id": "AFQSDCFFjPqlrgCQqWmi32Jq3IGjRkxv"
+  },
   "marsshooter": {
     "snap_id": "5YRF3ZPZpPhlacYTqMVDPWa2rjgUUcGw"
   },
@@ -1282,6 +1294,9 @@
   },
   "mpv-casept": {
     "snap_id": "0nOh34yKOGyhxVw2ZYEidSi22U7PQacr"
+  },
+  "mqtt-explorer": {
+    "snap_id": "I4xRvFAz5Sy6ETH2a2xTUi3vCMCd7KYB"
   },
   "mrrescue": {
     "snap_id": "lpYUqP4NUoa52wvQGcVEPJrUGOjdHzY4"
@@ -1636,6 +1651,12 @@
   },
   "qucs-spice": {
     "snap_id": "xNUN0WN8SLYIVWRDeze4bcVlWjyWL9oZ"
+  },
+  "ramboxpro": {
+    "snap_id": "NulydHSCxtH5wSBqXGFR9aZLepCnAf8U"
+  },
+  "raven-reader": {
+    "snap_id": "HIvZHHH3LMsMUe7pRpqd9TjuEyncimAs"
   },
   "rclone": {
     "snap_id": "IsLsJunB7e4PJIEtB0VEzfrSWBxgWYlR"
@@ -2110,6 +2131,9 @@
   },
   "wavebox": {
     "snap_id": "Z8BmkR8eoged6A9LJ4r5MxSFGO25SM58"
+  },
+  "webhook": {
+    "snap_id": "oCNhbM3mgiKELi0AFdn8b9g4FKo8Qbgd"
   },
   "webstorm": {
     "snap_id": "FY2LOqAxBypOW7jJnKh6i64HDgadNRYI"
