@@ -251,6 +251,9 @@
   "codav": {
     "snap_id": "sEMd7VfbeLNmp6SryBpeRYienpRTxeKK"
   },
+  "code": {
+    "snap_id": "Ht0aUHi7ofh9Fbwh6m7jUN2pAy6kzBiu"
+  },
   "code-insiders": {
     "snap_id": "vNVY8DiBL4e2Q8H3Xtsh71c8QSTaxBdp"
   },
@@ -419,6 +422,9 @@
   "dwarf-fortress": {
     "snap_id": "vZKt9nb6MvoWWnWbzdrrCGSwKGGfBBQi"
   },
+  "e-tools": {
+    "snap_id": "QR1pGrnI42JYlFWnFvlSQM6znzm1KD1S"
+  },
   "easy-disk-cleaner": {
     "snap_id": "47w91gRx2rtJXusOSLQlJcHYiDDmHRTg"
   },
@@ -440,11 +446,17 @@
   "eldarya-tax-calculator": {
     "snap_id": "Ok4lDHBCxGcnA9wJwa9X1qvXnQG9mfLQ"
   },
+  "electron-mail": {
+    "snap_id": "HWWPJ8bxE5fS58oaAaOWEyVfHgr8BaSQ"
+  },
   "electroneum": {
     "snap_id": "mquzgBikE40pOJSbYJWEESmDnUvuIsIX"
   },
   "electronic-wechat": {
     "snap_id": "DWaTopqs8HdUGdEu7ZvOzVXO27lqSOTy"
+  },
+  "electronplayer": {
+    "snap_id": "rHxG3USAPBl2Q7k9gJMqzrujkZXBImRf"
   },
   "electrum": {
     "snap_id": "arteQqwdIGwtP3ETSe58cRbhdsa9oS4z"
@@ -785,6 +797,9 @@
   "hunt-r": {
     "snap_id": "7LmqhJlheg2kizC1k1KX3pw1DRZ0bf8K"
   },
+  "hyperspace": {
+    "snap_id": "6XcoXt5eSK8VyJpPUByS56xSFzwwG3YT"
+  },
   "iagno": {
     "snap_id": "ZIK1TYx4gv1bgopVZ76Sq0r2hF8RpxvU"
   },
@@ -832,6 +847,9 @@
   },
   "irccloud-desktop": {
     "snap_id": "GzRid1k9bGro72ivGFJWluviBgwnFSCO"
+  },
+  "irfanview": {
+    "snap_id": "c0n3Pat28HVp2xPuT28wbGkUKFQaQRKL"
   },
   "irssi": {
     "snap_id": "Qdbh7cyFD0DTQeeqqji0yWo90oMx4pnj"
@@ -1445,6 +1463,9 @@
   "onlyoffice-desktopeditors": {
     "snap_id": "GSnkYLqliZYZvozVLqnU1cUESEDhTAYc"
   },
+  "open-syobon-action": {
+    "snap_id": "GjWIs8yPFNnxeRU6UxuKgWTy0IpAiMfu"
+  },
   "opengrok": {
     "snap_id": "Dac708zUPotB9ILuV7mJ12ShpDgyE750"
   },
@@ -1880,6 +1901,9 @@
   "step": {
     "snap_id": "LpuxqNxBk13pB40W83yZqzSX2eWaW7Wi"
   },
+  "strawberry": {
+    "snap_id": "Ha9kpqJVSkbVQM9KU3RfIOHpiELIE9hE"
+  },
   "stress-ng": {
     "snap_id": "YMJsyW4vySPdys8BCA7jx8UiOVSVhUT6"
   },
@@ -1933,6 +1957,9 @@
   },
   "teatime": {
     "snap_id": "DgknckzuApRwqJHXHh2ghfQWd85CfQH9"
+  },
+  "teeworlds-unofficial": {
+    "snap_id": "E2WGh0ZW9IMUHwjpP1FJNMBwpNDucxtD"
   },
   "teleconsole": {
     "snap_id": "va6EeaPq6HXDUugR7Xm99JZLyOm4IogO"
