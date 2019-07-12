@@ -89,6 +89,9 @@
   "aws-cli": {
     "snap_id": "CRrJViJiSuDcCkU31G0xpNRVNaj4P960"
   },
+  "azimuth": {
+    "snap_id": "0rVgBoeGw5Noxnc0XGWZiy0nfd3yKw2g"
+  },
   "azure-cli": {
     "snap_id": "nqdvXVu9Q4zZllGjdTwd7XbjTzYKT0XU"
   },
@@ -335,6 +338,9 @@
   "cryptowatch-myl0g": {
     "snap_id": "MoD7m9NXHVUxoolesVI31lk3eFwohmCT"
   },
+  "crystal": {
+    "snap_id": "hJ4PLSdMxJZPNnfQ4SHvcD0yScjupEFo"
+  },
   "ctint-science": {
     "snap_id": "EEf799d06C0R2ULokxKy3PHPW7gWlSM4"
   },
@@ -415,6 +421,9 @@
   },
   "dpdk-wililupy": {
     "snap_id": "xQTUHJ7FqFc7OHTEHXciB31cm6U2h6js"
+  },
+  "draftman": {
+    "snap_id": "39IBvgVdyYBMZWtoqzslY9s7Hjj4uETV"
   },
   "drmips": {
     "snap_id": "osvWp09TzjtSyHtPvV1BHIhJUw73LJIp"
@@ -592,6 +601,9 @@
   },
   "gamehub-fenriswolf": {
     "snap_id": "CNeCf8kU5Yxvv6Li5Ir1EY9fEItM1S94"
+  },
+  "gaucho": {
+    "snap_id": "rWhs06NlNMdFhcVxZ7t8ZPiOe2rBspyY"
   },
   "gdlauncher": {
     "snap_id": "oYPFr3aof5YneVF6WPyF0K8p3OZp3oiZ"
@@ -842,6 +854,9 @@
   "intellij-idea-community": {
     "snap_id": "KSPcSedMkvhgEjkg3Ki1PdjX2Ylm2aOy"
   },
+  "intellij-idea-educational": {
+    "snap_id": "MYtZj8zSPzq9KDKo5rhsgTzSpXkk4650"
+  },
   "intellij-idea-ultimate": {
     "snap_id": "i5O0FAhwADbvDr8LYQ6jVHxPEJle7m6C"
   },
@@ -880,6 +895,9 @@
   },
   "juju": {
     "snap_id": "e2CPHpB1fUxcKtCyJTsm5t3hN9axJ0yj"
+  },
+  "julia": {
+    "snap_id": "41dnLjlTBED3PcRaHITMuc8EMCGwwx0W"
   },
   "kalgebra": {
     "snap_id": "j0fycAqO0ltrw1AcwaRmodkY22fflspt"
@@ -1190,6 +1208,9 @@
   "magnesium": {
     "snap_id": "v6CwOgipImgelO0UclQr0tInb3K2hEsC"
   },
+  "magnus": {
+    "snap_id": "sw8jwX7T74V0bTXpN3Z6nHIO5d7ZWaNL"
+  },
   "mahjong-game": {
     "snap_id": "TeGtzxaruUPdb6MLCiPgtRdrJCZhyFKU"
   },
@@ -1484,6 +1505,9 @@
   "open-syobon-action": {
     "snap_id": "GjWIs8yPFNnxeRU6UxuKgWTy0IpAiMfu"
   },
+  "opencomic": {
+    "snap_id": "CUIbKCoHlOebZyjLkz0nxwskNBwEbboT"
+  },
   "opengrok": {
     "snap_id": "Dac708zUPotB9ILuV7mJ12ShpDgyE750"
   },
@@ -1495,6 +1519,9 @@
   },
   "openra": {
     "snap_id": "kY8dJvXQTxZ0keTgiCl1WBGT45o0hYYo"
+  },
+  "openresizer": {
+    "snap_id": "N9Kod6RcFe4iziTkIaYoYdHlGKKgL3xa"
   },
   "openscad-nightly": {
     "snap_id": "U0G6xWcDnmIByhlnpmuxM2zmzsLwmm60"
@@ -1531,6 +1558,9 @@
   },
   "pac-vs": {
     "snap_id": "r6qKgLm5XHKmZaRQg1VPbiU2MsYt8mWZ"
+  },
+  "packetsender": {
+    "snap_id": "YAgPlyB4NdJPgttPSMqVQUS4Jn3iIaOg"
   },
   "paintsupreme-3d": {
     "snap_id": "F3FwHKjIhKuCWR2cygfRNAhoGppsRRt6"
@@ -1696,6 +1726,9 @@
   },
   "qucs-spice": {
     "snap_id": "xNUN0WN8SLYIVWRDeze4bcVlWjyWL9oZ"
+  },
+  "qvge": {
+    "snap_id": "zBe0ZGfPMjlzy2gQXyXYgKQLYSdFZrAX"
   },
   "ramboxpro": {
     "snap_id": "NulydHSCxtH5wSBqXGFR9aZLepCnAf8U"
@@ -2224,6 +2257,9 @@
   },
   "winds": {
     "snap_id": "dBscTsMVtrP2CzGQgZbzn13UdTB9h79U"
+  },
+  "wing-personal7": {
+    "snap_id": "dM7LBrl8Zgf2nM0YByJvy4IGGoivXprv"
   },
   "wing7": {
     "snap_id": "RgBSzW3GoCXbjAEL3LCWoNhCWnF8rV4Q"
