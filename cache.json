@@ -245,6 +245,9 @@
   "cloudtag": {
     "snap_id": "E8BYCIcV4dognYh2xhMwT9pGseb22X3v"
   },
+  "cmake": {
+    "snap_id": "lxhU87e4ZIqx4FU6vYgqY0oRWJ4OnxVD"
+  },
   "cmars-monero": {
     "snap_id": "4V3beZIHNIMauvsLKb8r4mHpC6ZmpgIu"
   },
@@ -745,6 +748,9 @@
   },
   "gravit-designer": {
     "snap_id": "ue21otCteSEE9nQQPHYljra6xI39DI1t"
+  },
+  "groovy": {
+    "snap_id": "sl10QzLgybnVJAZWVV3XUj4rKiOFeMWS"
   },
   "grv": {
     "snap_id": "8lJp1L59BaKH3KuYzSqS8wFsBho3DT7K"
@@ -1685,6 +1691,9 @@
   "print-dcp": {
     "snap_id": "JYPNSF4IUDwDca7xPSrFgBjWh5RHJ1Oz"
   },
+  "projectlibre": {
+    "snap_id": "tb7lqowyATrOmDDawCvL84OWUOGiLcIt"
+  },
   "prometheus": {
     "snap_id": "We2QH1ClwGL6V88RJRWuZPWaBBPuzWPL"
   },
@@ -1738,6 +1747,9 @@
   },
   "rclone": {
     "snap_id": "IsLsJunB7e4PJIEtB0VEzfrSWBxgWYlR"
+  },
+  "recollectr": {
+    "snap_id": "4Es1yEjzeANt14cfxCDUlcxj9i4u1v09"
   },
   "reden": {
     "snap_id": "DMZr8BXKMLYDsHmx13LHSdXX77Z6A3Uz"
