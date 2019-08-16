@@ -371,6 +371,9 @@
   "dbtarzan": {
     "snap_id": "5SnLE0hG25V5vXFB9vAjZ0mwMeWItf72"
   },
+  "dda": {
+    "snap_id": "uFRUfUDBZBCjG17d6zZ1dhg8OgBRTydV"
+  },
   "deadbeef-vs": {
     "snap_id": "3CPDfCrUUPOIxv2UgdU5zD12TX0WhuIq"
   },
@@ -607,6 +610,9 @@
   },
   "gaucho": {
     "snap_id": "rWhs06NlNMdFhcVxZ7t8ZPiOe2rBspyY"
+  },
+  "gcompris": {
+    "snap_id": "QC7aattxeOlCUpGwG4BzvMZxeprZm7Wy"
   },
   "gdlauncher": {
     "snap_id": "oYPFr3aof5YneVF6WPyF0K8p3OZp3oiZ"
@@ -1147,6 +1153,9 @@
   },
   "learnit": {
     "snap_id": "OHILDGdP7v0yZmkQnvGyXnGD5t2mZZ1g"
+  },
+  "leo-editor": {
+    "snap_id": "06r1fxwrzRDQJC0vSE9pV2R9U56cxcNJ"
   },
   "lepton": {
     "snap_id": "9HtCEV6aJu7P0Zzdc6KmGKK6BEerfl0E"
@@ -2125,6 +2134,9 @@
   },
   "transitionsdj": {
     "snap_id": "hAS84nY2V1Ip6fu1iEz5cKs19BdBdhyq"
+  },
+  "translatium": {
+    "snap_id": "xGNgB8ZGatLZRVKyC8kTung1BZr4CZzO"
   },
   "trenchbroom": {
     "snap_id": "Dj28vlGmc4i6MEstmEHCzN5i1l7oRkZ6"
