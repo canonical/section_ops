@@ -147,7 +147,11 @@ def main():
             if name.startswith('#'):
                 logger.info('!!! Ignoring {}'.format(name))
                 continue
-            snap_id = get_snap_id(name)
+            try:
+                snap_id = get_snap_id(name)
+            except KeyError as err:
+                print("The following snap does not seem to exist: {}".format(err, name))
+                raise
             if snap_id in snap_ids:
                 continue
             snap_ids.append(snap_id)
