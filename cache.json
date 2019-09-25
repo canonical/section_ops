@@ -242,6 +242,9 @@
   "cli-worm": {
     "snap_id": "9HmljqUYQ2rn66DmrIZ4Cmd14BkzUCHx"
   },
+  "climate-trail": {
+    "snap_id": "3xxDsHs9oCVQuvf5L8KTJ1BOKtzsbC8e"
+  },
   "clion": {
     "snap_id": "6JBjLwyVchga4cOSDqhWJd9NgQfrTYam"
   },
@@ -503,6 +506,9 @@
   "epicpinball": {
     "snap_id": "0rLo209cjpP5Z3xp7PAXJlyLPB5BJLGZ"
   },
+  "epictask": {
+    "snap_id": "BmOJvMRWB5mQxILakGWe3OPob6Mj3SZq"
+  },
   "eqonomize-hk": {
     "snap_id": "pRG4mSMt1NNjFB51kCCFhBLv5DcoLCjm"
   },
@@ -640,6 +646,9 @@
   },
   "gimp": {
     "snap_id": "KDHYbyuzZukmLhiogKiUksByRhXD2gYV"
+  },
+  "gisto": {
+    "snap_id": "2omriJ286kZhnO4077aYegbqudE91VcO"
   },
   "git-cola": {
     "snap_id": "PXfuqn22GScJ9wUVqvGaDEhQv8a27nYI"
@@ -1235,6 +1244,9 @@
   "mailspring": {
     "snap_id": "0TyNxgP6wEM3nTXzymtc1wOnvl2P6Iij"
   },
+  "makemkv": {
+    "snap_id": "oQi5445Bw83J591pCgmPm8lCBNkvrL0w"
+  },
   "mame": {
     "snap_id": "D2AbMrcy0frlQRhokuBnhAtABqtw8hJb"
   },
@@ -1288,6 +1300,9 @@
   },
   "midori": {
     "snap_id": "PZyTTgd3zCbAxCcecqeDgeUPItOv58KT"
+  },
+  "mindustry": {
+    "snap_id": "egcej2jJVH601oFOBVHcC0ah90NQ0D3X"
   },
   "minecraft": {
     "snap_id": "aJQRf6WPQq04DH0TB2HdTB6K9rf6I1yX"
@@ -1510,6 +1525,9 @@
   },
   "olam": {
     "snap_id": "plUFEB6sn1Uh9NJWujOb9zKRmInl8vW2"
+  },
+  "olivia": {
+    "snap_id": "nr3JKML0TRqZBLQdJITxKqzhFcxvyLC0"
   },
   "oman": {
     "snap_id": "zJGY00f7lRwPd9STuSDUtUO6FrCIcWtg"
@@ -1994,6 +2012,9 @@
   "step": {
     "snap_id": "LpuxqNxBk13pB40W83yZqzSX2eWaW7Wi"
   },
+  "story": {
+    "snap_id": "ujykMEYX2HBBb67SedIU80KhquVdg9CL"
+  },
   "strawberry": {
     "snap_id": "Ha9kpqJVSkbVQM9KU3RfIOHpiELIE9hE"
   },
@@ -2042,8 +2063,14 @@
   "talesofmajeyal": {
     "snap_id": "rL5LA8xrvBd95OYczuFAWk05rUUpB4u9"
   },
+  "taskade": {
+    "snap_id": "jHKDY3aZpjYteMhEDndVvIWps1afPWNZ"
+  },
   "taskbook": {
     "snap_id": "fsERVreEZH6aoBr8gclAjd2iFej23X8N"
+  },
+  "taskline": {
+    "snap_id": "UVO3LA7LireNxDEfcwIoE1S9ZLgtMF8v"
   },
   "tdhcad": {
     "snap_id": "qYBYNvfcQaSWRQAhY89lwrtniZeZMWRH"
@@ -2260,6 +2287,9 @@
   },
   "wavebox": {
     "snap_id": "Z8BmkR8eoged6A9LJ4r5MxSFGO25SM58"
+  },
+  "wdune": {
+    "snap_id": "sDbRcHq2ELhQ3aZ4tIaOAmGjhNi5PLsJ"
   },
   "webhook": {
     "snap_id": "oCNhbM3mgiKELi0AFdn8b9g4FKo8Qbgd"
