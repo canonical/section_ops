@@ -9,5 +9,5 @@ Section operation hacks
     ========================================================================
     [ Instructions ]
     ========================================================================
-    
+
     $ # Now follow the instructions of the build.py output
