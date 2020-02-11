@@ -4,7 +4,7 @@ Section operation hacks
 
 # Running
 
-    $ ./build.py
+    $ ./build.py [--staging]
     [ Output ]
     ========================================================================
     [ Instructions ]

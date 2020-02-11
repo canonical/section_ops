@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""See README.md for usage"""
 
 import argparse
 import os
@@ -21,6 +21,8 @@ EXCLUSIVE_CATEGORIES = (
 # Number of entries (snaps) marked as "featured" within each section.
 N_FEATURED = 20
 
+STAGING_API_HOST = 'api.staging.snapcraft.io'
+PROD_API_HOST = 'api.snapcraft.io'
 
 logging.basicConfig(format='%(asctime)s %(levelname)-4.4s  %(message)s')
 logger = logging.getLogger(__name__)
@@ -29,7 +31,22 @@ logger.setLevel(logging.INFO)
 name_cache = {}
 
 
-def get_snap_id(name):
+def parse_cmdline_args():
+    parser = argparse.ArgumentParser(
+        description='Section Operations',
+        allow_abbrev=False,
+    )
+    parser.add_argument("--staging", action='store_true')
+    return parser.parse_args()
+
+
+def get_api_host(staging):
+    '''If 'staging' is truthy, return staging API host instead of prod.'''
+    return STAGING_API_HOST if staging else PROD_API_HOST
+
+
+def get_snap_id(staging, name):
+    '''If 'staging' is truthy, request from staging instead of prod.'''
     if name_cache.get(name) is not None:
         return name_cache[name]['snap_id']
 
@@ -37,7 +54,7 @@ def get_snap_id(name):
     headers = {
         'Snap-Device-Series': '16',
     }
-    url = 'https://api.snapcraft.io/v2/snaps/info/{}'.format(name)
+    url = 'https://{}/v2/snaps/info/{}'.format(get_api_host(staging), name)
     r = requests.get(url, headers=headers)
 
     snap_id = r.json()['snap-id']
@@ -46,20 +63,24 @@ def get_snap_id(name):
     return snap_id
 
 
-def get_promoted_snaps():
+def get_promoted_snaps(staging):
+    '''If 'staging' is truthy, request from staging instead of prod.'''
     url = (
-        'https://api.snapcraft.io/api/v1/snaps/search'
+        'https://{}/api/v1/snaps/search'
         '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
-        'promoted=true&fields=snap_id,sections'
+        'promoted=true&fields=snap_id,sections'.format(get_api_host(staging))
     )
     return _walk_through(url)
 
 
-def get_section_snaps(section_name):
+def get_section_snaps(staging, section_name):
+    '''If 'staging' is truthy, request from staging instead of prod.'''
     url = (
-        'https://api.snapcraft.io/api/v1/snaps/search'
-        '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
-        'fields=snap_id&section={}'.format(section_name)
+        'https://{}/api/v1/snaps/search'
+        '?scope=wide&arch=wide&confinement=strict,classic,devmode'
+        '&fields=snap_id&section={}'.format(
+            get_api_host(staging), section_name
+        )
     )
     return _walk_through(url)
 
@@ -90,16 +111,12 @@ def _walk_through(url):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Section Operations ...'
-    )
-    args = parser.parse_args()
-
+    args = parse_cmdline_args()
 
     sections_by_name = {}
 
     logger.info('Fetching all currently promoted snaps.')
-    promoted = get_promoted_snaps()
+    promoted = get_promoted_snaps(args.staging)
     logger.info('Fetched %d snaps.', len(promoted))
     for snap in promoted:
         for section in snap['sections']:
@@ -115,7 +132,7 @@ def main():
     # Skip `featured`, which is not hidden.
     for name in EXCLUSIVE_CATEGORIES[1:]:
         logger.info('Fetching snaps for: %s', name)
-        section_snaps = get_section_snaps(name)
+        section_snaps = get_section_snaps(args.staging, name)
         logger.info('Fetched %d snaps.', len(section_snaps))
         snaps = sections_by_name.setdefault(name, [])
         for i, snap in enumerate(section_snaps):
@@ -148,7 +165,7 @@ def main():
                 logger.info('!!! Ignoring {}'.format(name))
                 continue
             try:
-                snap_id = get_snap_id(name)
+                snap_id = get_snap_id(args.staging, name)
             except KeyError as err:
                 print("The following snap does not seem to exist: {}".format(err, name))
                 raise
@@ -235,7 +252,7 @@ def main():
           "http://localhost:8003/sections/snaps -d '@update.json'")
 
     if delete_sections:
-        print('  $ psql <production_dsn> -c "DELETE FROM section WHERE '
+        print('  $ psql <dsn> -c "DELETE FROM section WHERE '
               'name IN ({});"'
               .format(', '.join([repr(s) for s in delete_sections])))
 
