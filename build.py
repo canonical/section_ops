@@ -28,8 +28,6 @@ logging.basicConfig(format='%(asctime)s %(levelname)-4.4s  %(message)s')
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-name_cache = {}
-
 
 def parse_cmdline_args():
     parser = argparse.ArgumentParser(
@@ -45,7 +43,7 @@ def get_api_host(staging):
     return STAGING_API_HOST if staging else PROD_API_HOST
 
 
-def get_snap_id(staging, name):
+def get_snap_id(staging, name, name_cache):
     '''If 'staging' is truthy, request from staging instead of prod.'''
     if name_cache.get(name) is not None:
         return name_cache[name]['snap_id']
@@ -110,9 +108,7 @@ def _walk_through(url):
     return snaps
 
 
-def main():
-    args = parse_cmdline_args()
-
+def process_sections(args, name_cache):
     sections_by_name = {}
 
     logger.info('Fetching all currently promoted snaps.')
@@ -165,7 +161,7 @@ def main():
                 logger.info('!!! Ignoring {}'.format(name))
                 continue
             try:
-                snap_id = get_snap_id(args.staging, name)
+                snap_id = get_snap_id(args.staging, name, name_cache)
             except KeyError as err:
                 print("The following snap does not seem to exist: {}".format(err, name))
                 raise
@@ -276,7 +272,10 @@ def main():
     print(72 * '=')
 
 
-if __name__ == '__main__':
+def main():
+    args = parse_cmdline_args()
+
+    name_cache = {}
     try:
         logger.info('Loading cache ...')
         with open('cache.json') as fd:
@@ -285,8 +284,13 @@ if __name__ == '__main__':
         logger.warning('Missing/Cold cache ...')
 
     try:
-        main()
+        process_sections(args, name_cache)
     finally:
         logger.info('Saving cache ...')
         with open('cache.json', 'w') as fd:
             fd.write(json.dumps(name_cache, indent=2, sort_keys=True))
+
+
+if __name__ == '__main__':
+    main()
+
