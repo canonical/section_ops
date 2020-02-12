@@ -40,6 +40,11 @@ def parse_cmdline_args():
     return parser.parse_args()
 
 
+def get_filename(prefix, staging):
+    template = '{}.staging.json' if staging else '{}.json'
+    return template.format(prefix)
+
+
 def get_api_host(staging):
     '''If 'staging' is truthy, return staging API host instead of prod.'''
     return STAGING_API_HOST if staging else PROD_API_HOST
@@ -281,7 +286,7 @@ def main():
     name_cache = {}
     try:
         logger.info('Loading cache ...')
-        with open('cache.json') as fd:
+        with open(get_filename('cache', args.staging)) as fd:
             name_cache = json.load(fd)
     except:
         logger.warning('Missing/Cold cache ...')
@@ -290,7 +295,7 @@ def main():
         process_sections(args, name_cache)
     finally:
         logger.info('Saving cache ...')
-        with open('cache.json', 'w') as fd:
+        with open(get_filename('cache', args.staging), 'w') as fd:
             fd.write(json.dumps(name_cache, indent=2, sort_keys=True))
 
 
