@@ -163,8 +163,9 @@ def process_sections(args, name_cache):
             try:
                 snap_id = get_snap_id(args.staging, name, name_cache)
             except KeyError as err:
-                print("The following snap does not seem to exist: {}".format(err, name))
-                raise
+                logger.warning(
+                    "!!! From '{}', snap '{}' not in store.".format(fn, name))
+                continue
             if snap_id in snap_ids:
                 continue
             snap_ids.append(snap_id)
