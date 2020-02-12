@@ -125,7 +125,7 @@ def process_sections(args, name_cache):
 
     logger.info('Fetching all currently promoted snaps.')
     promoted = get_promoted_snaps(args.staging)
-    logger.info('Fetched %d snaps.', len(promoted))
+    logger.info('%d snaps.', len(promoted))
     for snap in promoted:
         for section in snap['sections']:
             name = section['name']
@@ -136,12 +136,12 @@ def process_sections(args, name_cache):
                 'featured': section['featured'],
             })
 
-    logger.info('Fetching snaps in hidden sections.')
+    logger.info('Hidden sections:')
     # Skip `featured`, which is not hidden.
     for name in EXCLUSIVE_CATEGORIES[1:]:
         logger.info('Fetching snaps for: %s', name)
         section_snaps = get_section_snaps(args.staging, name)
-        logger.info('Fetched %d snaps.', len(section_snaps))
+        logger.info('%d snaps.', len(section_snaps))
         snaps = sections_by_name.setdefault(name, [])
         for i, snap in enumerate(section_snaps):
             snaps.append({
@@ -220,8 +220,9 @@ def process_sections(args, name_cache):
     logger.info('Saving "update.json" ...')
     with open('update.json', 'w') as fd:
         fd.write(json.dumps(update_payload, indent=2, sort_keys=True))
+    outputs = ['update.json']
 
-    # Assembly deletion payload.
+    # Assemble deletion payload.
     logger.info('Calculating snap deletions ...')
     delete_sections = []
     delete_payload = {'sections': []}
@@ -246,6 +247,7 @@ def process_sections(args, name_cache):
         logger.info('Saving "delete.json" ...')
         with open('delete.json', 'w') as fd:
             fd.write(json.dumps(delete_payload, indent=2, sort_keys=True))
+        outputs.append('delete.json')
     else:
         logger.info('No deletions needed.')
         try:
@@ -254,8 +256,10 @@ def process_sections(args, name_cache):
             pass
 
     print(72 * '=')
-    print('Copy "delete.json" and "update.json" to a snapfind instance. '
-          'Then run the following commands:')
+    print(
+        'Copy {} to a snapfind instance, then run:'
+        .format(' & '.join(repr(o) for o in outputs))
+    )
     print()
     if delete_payload['sections']:
         print("  $ curl -X DELETE -H 'Content-Type: application/json' "
@@ -267,6 +271,7 @@ def process_sections(args, name_cache):
         print('  $ psql <dsn> -c "DELETE FROM section WHERE '
               'name IN ({});"'
               .format(', '.join([repr(s) for s in delete_sections])))
+        print()
 
         updated_snaps = []
         for section in update_payload['sections']:
@@ -285,6 +290,7 @@ def process_sections(args, name_cache):
             print('  Orphan assignments from "{}":'.format(n))
             for s in dead_ids:
                 print('  - {}'.format(promoted_by_snap_id.get(s, s)))
+    print()
     print(72 * '=')
 
 
