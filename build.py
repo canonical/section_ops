@@ -6,6 +6,7 @@ import glob
 import itertools
 import json
 import logging
+import os
 import sys
 import time
 
@@ -41,7 +42,7 @@ def parse_cmdline_args():
 
 
 def get_filename(prefix, staging):
-    template = '{}.staging.json' if staging else '{}.json'
+    template = 'staging/{}.json' if staging else 'prod/{}.json'
     return template.format(prefix)
 
 
@@ -247,6 +248,10 @@ def process_sections(args, name_cache):
             fd.write(json.dumps(delete_payload, indent=2, sort_keys=True))
     else:
         logger.info('No deletions needed.')
+        try:
+            os.remove('delete.json')
+        except OSError:
+            pass
 
     print(72 * '=')
     print('Copy "delete.json" and "update.json" to a snapfind instance. '
