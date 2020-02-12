@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-
+"""See README.md for usage"""
 
 import argparse
-import os
+import glob
 import itertools
 import json
 import logging
+import os
 import sys
 import time
 
@@ -21,15 +22,40 @@ EXCLUSIVE_CATEGORIES = (
 # Number of entries (snaps) marked as "featured" within each section.
 N_FEATURED = 20
 
+STAGING_API_HOST = 'api.staging.snapcraft.io'
+PROD_API_HOST = 'api.snapcraft.io'
 
-logging.basicConfig(format='%(asctime)s %(levelname)-4.4s  %(message)s')
+logging.basicConfig(format='%(asctime)s %(levelname)s  %(message)s')
+logging.addLevelName(logging.WARNING, "\033[1;93mWARN\033[0m")
+logging.addLevelName(logging.ERROR, "\033[1;91mERRO\033[0m")
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-name_cache = {}
+
+def parse_cmdline_args():
+    parser = argparse.ArgumentParser(
+        description='Section Operations',
+        allow_abbrev=False,
+    )
+    parser.add_argument("--staging", action='store_true')
+    return parser.parse_args()
 
 
-def get_snap_id(name):
+def get_section_dir(staging):
+    return 'staging' if staging else 'prod'
+
+
+def get_filename(prefix, staging):
+    return '{}/{}.json'.format(get_section_dir(staging), prefix)
+
+
+def get_api_host(staging):
+    '''If 'staging' is truthy, return staging API host instead of prod.'''
+    return STAGING_API_HOST if staging else PROD_API_HOST
+
+
+def get_snap_id(staging, name, name_cache):
+    '''If 'staging' is truthy, request from staging instead of prod.'''
     if name_cache.get(name) is not None:
         return name_cache[name]['snap_id']
 
@@ -37,7 +63,7 @@ def get_snap_id(name):
     headers = {
         'Snap-Device-Series': '16',
     }
-    url = 'https://api.snapcraft.io/v2/snaps/info/{}'.format(name)
+    url = 'https://{}/v2/snaps/info/{}'.format(get_api_host(staging), name)
     r = requests.get(url, headers=headers)
 
     snap_id = r.json()['snap-id']
@@ -46,20 +72,24 @@ def get_snap_id(name):
     return snap_id
 
 
-def get_promoted_snaps():
+def get_promoted_snaps(staging):
+    '''If 'staging' is truthy, request from staging instead of prod.'''
     url = (
-        'https://api.snapcraft.io/api/v1/snaps/search'
+        'https://{}/api/v1/snaps/search'
         '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
-        'promoted=true&fields=snap_id,sections'
+        'promoted=true&fields=snap_id,sections'.format(get_api_host(staging))
     )
     return _walk_through(url)
 
 
-def get_section_snaps(section_name):
+def get_section_snaps(staging, section_name):
+    '''If 'staging' is truthy, request from staging instead of prod.'''
     url = (
-        'https://api.snapcraft.io/api/v1/snaps/search'
-        '?scope=wide&arch=wide&confinement=strict,classic,devmode&'
-        'fields=snap_id&section={}'.format(section_name)
+        'https://{}/api/v1/snaps/search'
+        '?scope=wide&arch=wide&confinement=strict,classic,devmode'
+        '&fields=snap_id&section={}'.format(
+            get_api_host(staging), section_name
+        )
     )
     return _walk_through(url)
 
@@ -89,18 +119,12 @@ def _walk_through(url):
     return snaps
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='Section Operations ...'
-    )
-    args = parser.parse_args()
-
-
+def process_sections(args, name_cache):
     sections_by_name = {}
 
     logger.info('Fetching all currently promoted snaps.')
-    promoted = get_promoted_snaps()
-    logger.info('Fetched %d snaps.', len(promoted))
+    promoted = get_promoted_snaps(args.staging)
+    logger.info('%d snaps.', len(promoted))
     for snap in promoted:
         for section in snap['sections']:
             name = section['name']
@@ -111,12 +135,12 @@ def main():
                 'featured': section['featured'],
             })
 
-    logger.info('Fetching snaps in hidden sections.')
+    logger.info('Hidden sections:')
     # Skip `featured`, which is not hidden.
     for name in EXCLUSIVE_CATEGORIES[1:]:
         logger.info('Fetching snaps for: %s', name)
-        section_snaps = get_section_snaps(name)
-        logger.info('Fetched %d snaps.', len(section_snaps))
+        section_snaps = get_section_snaps(args.staging, name)
+        logger.info('%d snaps.', len(section_snaps))
         snaps = sections_by_name.setdefault(name, [])
         for i, snap in enumerate(section_snaps):
             snaps.append({
@@ -132,10 +156,9 @@ def main():
 
     logger.info('Processing new sections ...')
     new_sections = {}
-    for fn in os.listdir('.'):
-        if not fn.endswith('.section'):
-            continue
-        section_name = fn.split('.')[0]
+    for fn in glob.glob('{}/*.section'.format(get_section_dir(args.staging))):
+        # Get the "file" part of "dir/file.ext"
+        section_name = fn.split('/')[1].split('.')[0]
         names = [n.strip() for n in open(fn).readlines() if n.strip()]
         unique_names = set(names)
         logger.info(
@@ -148,10 +171,11 @@ def main():
                 logger.info('!!! Ignoring {}'.format(name))
                 continue
             try:
-                snap_id = get_snap_id(name)
+                snap_id = get_snap_id(args.staging, name, name_cache)
             except KeyError as err:
-                print("The following snap does not seem to exist: {}".format(err, name))
-                raise
+                logger.warning(
+                    "!!! From '{}', snap '{}' not in store.".format(fn, name))
+                continue
             if snap_id in snap_ids:
                 continue
             snap_ids.append(snap_id)
@@ -195,8 +219,9 @@ def main():
     logger.info('Saving "update.json" ...')
     with open('update.json', 'w') as fd:
         fd.write(json.dumps(update_payload, indent=2, sort_keys=True))
+    outputs = ['update.json']
 
-    # Assembly deletion payload.
+    # Assemble deletion payload.
     logger.info('Calculating snap deletions ...')
     delete_sections = []
     delete_payload = {'sections': []}
@@ -221,12 +246,19 @@ def main():
         logger.info('Saving "delete.json" ...')
         with open('delete.json', 'w') as fd:
             fd.write(json.dumps(delete_payload, indent=2, sort_keys=True))
+        outputs.append('delete.json')
     else:
         logger.info('No deletions needed.')
+        try:
+            os.remove('delete.json')
+        except OSError:
+            pass
 
     print(72 * '=')
-    print('Copy "delete.json" and "update.json" to a snapfind instance. '
-          'Then run the following commands:')
+    print(
+        'Copy {} to a snapfind instance, then run:'
+        .format(' & '.join(repr(o) for o in outputs))
+    )
     print()
     if delete_payload['sections']:
         print("  $ curl -X DELETE -H 'Content-Type: application/json' "
@@ -235,9 +267,10 @@ def main():
           "http://localhost:8003/sections/snaps -d '@update.json'")
 
     if delete_sections:
-        print('  $ psql <production_dsn> -c "DELETE FROM section WHERE '
+        print('  $ psql <dsn> -c "DELETE FROM section WHERE '
               'name IN ({});"'
               .format(', '.join([repr(s) for s in delete_sections])))
+        print()
 
         updated_snaps = []
         for section in update_payload['sections']:
@@ -256,20 +289,29 @@ def main():
             print('  Orphan assignments from "{}":'.format(n))
             for s in dead_ids:
                 print('  - {}'.format(promoted_by_snap_id.get(s, s)))
+    print()
     print(72 * '=')
 
 
-if __name__ == '__main__':
+def main():
+    args = parse_cmdline_args()
+
+    name_cache = {}
     try:
         logger.info('Loading cache ...')
-        with open('cache.json') as fd:
+        with open(get_filename('cache', args.staging)) as fd:
             name_cache = json.load(fd)
-    except:
+    except FileNotFoundError:
         logger.warning('Missing/Cold cache ...')
 
     try:
-        main()
+        process_sections(args, name_cache)
     finally:
         logger.info('Saving cache ...')
-        with open('cache.json', 'w') as fd:
+        with open(get_filename('cache', args.staging), 'w') as fd:
             fd.write(json.dumps(name_cache, indent=2, sort_keys=True))
+
+
+if __name__ == '__main__':
+    main()
+

@@ -1,0 +1,239 @@
+{
+  "bluez": {
+    "snap_id": "NkPqmIELjn1idQNJ9rTXTVF3vUoMjAQc"
+  },
+  "busybox2": {
+    "snap_id": "yFH5uuDe8tcegB8cF0tTqhXgQGXTHTEV"
+  },
+  "busybox3": {
+    "snap_id": "XQ2CBF3rDY5WFbZhdSzkiimrDBezORXw"
+  },
+  "cassandra": {
+    "snap_id": "izgznmnn7UiTCmhQwRDcAJ3wW6uPqiBR"
+  },
+  "category-browsing-10": {
+    "snap_id": "082AowBWt1eHfe09iXCTos0IEdKjZ6qD"
+  },
+  "category-browsing-11": {
+    "snap_id": "jS0pcPyVJRZYPwZT8EGtcST2JF6EBXbt"
+  },
+  "category-browsing-12": {
+    "snap_id": "K36VQdatDvYirn8HLNP8eQoxeatexUdq"
+  },
+  "category-browsing-13": {
+    "snap_id": "BrcreNmksjUrb0v6KhAQaMnIR4XVApaJ"
+  },
+  "category-browsing-14": {
+    "snap_id": "tayqjQuW1OWvZriRORNUrZroWvqXHNdK"
+  },
+  "category-browsing-15": {
+    "snap_id": "Bwlls0Ibjgh713QHZVzq6wez38zQBYQr"
+  },
+  "category-browsing-16": {
+    "snap_id": "tujqRnYp0E9tbQmQsu91rkFIQmuTN4Jc"
+  },
+  "category-browsing-17": {
+    "snap_id": "eqLUNdAWsJUcvDewyYUAE0bOVwobHNVW"
+  },
+  "category-browsing-18": {
+    "snap_id": "dnlW9VtEg6SiUc22aQ0cH3qwubJKKybB"
+  },
+  "category-browsing-19": {
+    "snap_id": "AqwPSJZaSqkHkPptM9r5PbOguYd8g8oV"
+  },
+  "category-browsing-2": {
+    "snap_id": "tvRvOJTeCgo9ZiUPIYGtaYJXiLbHDLtp"
+  },
+  "category-browsing-20": {
+    "snap_id": "WDVorBTLiBbO0X9myXFxpuGbps8kjzUi"
+  },
+  "category-browsing-21": {
+    "snap_id": "ARto12p17l3f0Bv1lYhlwKNQQgC4vsud"
+  },
+  "category-browsing-22": {
+    "snap_id": "s9ZPJaXjagrmY6mid3U4mtUyxi1ymXlm"
+  },
+  "category-browsing-23": {
+    "snap_id": "7VnnNcGMKXH8mR5C5hfL5eJ8LBCywSZa"
+  },
+  "category-browsing-24": {
+    "snap_id": "hhlp8RyVioqYEUWUG14gxlHa0aP5iI9A"
+  },
+  "category-browsing-25": {
+    "snap_id": "H4uCGbox6THHOelBvGOzaiubhGqKys7O"
+  },
+  "category-browsing-26": {
+    "snap_id": "pafGwGmGZ1Q2Xj71PkyELncBAhFx2aKa"
+  },
+  "category-browsing-27": {
+    "snap_id": "LMkEFEgRF6NE73lctyno78GQApKW9IKe"
+  },
+  "category-browsing-28": {
+    "snap_id": "jCokZwruPV2L04FsvycHMTrGhooloAJY"
+  },
+  "category-browsing-29": {
+    "snap_id": "filNgvwhoGdqd0ZUJGI0g7YFKZmkBRhL"
+  },
+  "category-browsing-3": {
+    "snap_id": "Fx0YBJfZsBOmEZQpDUra398oREopLjot"
+  },
+  "category-browsing-30": {
+    "snap_id": "D6tzichXBEbsZjnoVj1vplHfZ2M2SzBF"
+  },
+  "category-browsing-31": {
+    "snap_id": "k6TGX19LrUql3mW4JcxtJVW7MGQQUj3D"
+  },
+  "category-browsing-32": {
+    "snap_id": "oSkYBNizetGJjC6kQwjf0KAAO5kncU5h"
+  },
+  "category-browsing-33": {
+    "snap_id": "oAa2w1841eLEmc45WQWN7tOjLydId3bH"
+  },
+  "category-browsing-34": {
+    "snap_id": "01gXm8TA7NVcU9C2tqPwtK1ZXImdVU4u"
+  },
+  "category-browsing-35": {
+    "snap_id": "IDwuyoZdj5kqYacpCQhVuoFVvrZdtcf0"
+  },
+  "category-browsing-36": {
+    "snap_id": "4uzR8O14jTE8H5d87w1YwF4MKr4DHOxL"
+  },
+  "category-browsing-37": {
+    "snap_id": "lgRz0irH6PCz99tMQbsb67i06QA5UNQb"
+  },
+  "category-browsing-38": {
+    "snap_id": "PHAzDfxqrC5JjRWXoZvZau1FddKudKaZ"
+  },
+  "category-browsing-39": {
+    "snap_id": "ggQ70j68lprzu02q64Ws1htTtzzki1n1"
+  },
+  "category-browsing-4": {
+    "snap_id": "8PDPk879fIAnH7ewCjiTdJtOEl9aQL5n"
+  },
+  "category-browsing-40": {
+    "snap_id": "pZpcIEPRsxbIXpuDuYIm0azuV5KaMYo7"
+  },
+  "category-browsing-41": {
+    "snap_id": "FqvduKGoTdjDSjPGWecKE0JQwHfJ7DF5"
+  },
+  "category-browsing-42": {
+    "snap_id": "vfReBtQERswIyUCoofsPZkSRkl6tSgMC"
+  },
+  "category-browsing-43": {
+    "snap_id": "T6PCu9EYYseEarcAh12Tg47fmIpdH6HW"
+  },
+  "category-browsing-44": {
+    "snap_id": "yZs63khMjPmiRBE80XhFSJqWjuamF1eV"
+  },
+  "category-browsing-45": {
+    "snap_id": "twXNjQoMz7aWMB689s4sFiXNGh86Y2uD"
+  },
+  "category-browsing-46": {
+    "snap_id": "2gTyPMw6oqhPyQPsDXMWqcGC1NQRCmtY"
+  },
+  "category-browsing-47": {
+    "snap_id": "3wZU1a1ek1RB5D6Y441Eo5cHYXe1r9dP"
+  },
+  "category-browsing-48": {
+    "snap_id": "hWbEKVs7SvbP6Sb9xh0Sxkk62w6SqN1F"
+  },
+  "category-browsing-49": {
+    "snap_id": "WKM8CI439Of9hI5dSfUQn3ayIMKzMUWX"
+  },
+  "category-browsing-5": {
+    "snap_id": "B93fVMvroRMOAj2diAUHJem068fL6azj"
+  },
+  "category-browsing-50": {
+    "snap_id": "jCiZVPo6fWJcFoB7hEqSgiEDXJGqlNRG"
+  },
+  "category-browsing-6": {
+    "snap_id": "rNGzZCADbxiVDuxlormIk6xcWcJn278S"
+  },
+  "category-browsing-7": {
+    "snap_id": "woehyJKTru1Yc6p98FWMnhp6bvD2kDwy"
+  },
+  "category-browsing-8": {
+    "snap_id": "dKVXMRlVllNxFoSkGAUJSuykiPh6Nycu"
+  },
+  "category-browsing-9": {
+    "snap_id": "mm8M7db6nyOzFK0C4Fmqe5bstH9oSZUP"
+  },
+  "cprovtest": {
+    "snap_id": "9w3pfH2wI1ejj0WH51cYavxHLb9YCzZw"
+  },
+  "foo3": {
+    "snap_id": "LjxpxZS3JVlKEIU0HAersDfpwrHqdF5o"
+  },
+  "foo6": {
+    "snap_id": "fRUvNRH8X62Ftmrah2tD7VUkf5xhpkBK"
+  },
+  "foobar53": {
+    "snap_id": "fXKEXrbC2tJOV819U5E0Zfn3v5LLIxs2"
+  },
+  "godd": {
+    "snap_id": "AibjDhY2aXC0m9moDD9IEsvPH1FxcWYh"
+  },
+  "hello-htop": {
+    "snap_id": "HYJenC5Y1JaJK14IEz8FUgRRej1MYNDy"
+  },
+  "hello-noise2": {
+    "snap_id": "YQNoWHQzvtu9BxzBZmGr0ucXAlsUOLNw"
+  },
+  "hello-noodles": {
+    "snap_id": "MiKQbYkNzFo1Reo4EOcQbbcqGNabxHjc"
+  },
+  "hi-world": {
+    "snap_id": "2PbRPeJtm44022oPRzyGMRYeUGeRReHT"
+  },
+  "htop-snap": {
+    "snap_id": "9f8Kk41Z0qADoCwy5nVtrURYPE0iwMff"
+  },
+  "jhartley-one": {
+    "snap_id": "tUQF6wzfF2AII0K9HWzbBM06EJrj6MK5"
+  },
+  "many-revisions": {
+    "snap_id": "JPMm00HBma13j11bv5xlyZCLnptnRYKU"
+  },
+  "nextcloud": {
+    "snap_id": "9ni0KlWu4X4S0YDY9HVFAEbAUgfCtNrX"
+  },
+  "no": {
+    "snap_id": "LpkY6BuU0Kicpi1UIZ7qLdZWk3p2hdbt"
+  },
+  "other": {
+    "snap_id": "KE3RAVwDYwlHy0V5eAbYjO8HoWHpDkhk"
+  },
+  "pi2": {
+    "snap_id": "v1WXDRKbPsugcWRr7JZUhLMNEBVR7Vpl"
+  },
+  "ricardokirkner-test2": {
+    "snap_id": "A0KkM9O8Aoht03uQqKwGB7JEZAbTPwnu"
+  },
+  "simple-cprov": {
+    "snap_id": "j30eu3ScWQgvhQQvQoqoR3SNfxACDW6Z"
+  },
+  "snap-this": {
+    "snap_id": "a3hy3bsgGm5g8hhZrGeVlIip6jlcAsJx"
+  },
+  "snapweb": {
+    "snap_id": "HhAOPA1KarNfALsCUbv3M9qtHctY9dt3"
+  },
+  "surl": {
+    "snap_id": "wKFeK2U7Y2CB53vRJwg9MeR9bqfPvtZK"
+  },
+  "telegram-sergiusens": {
+    "snap_id": "6L8TKPBCcxI7HkPi59rT0q5pFjgzPl1R"
+  },
+  "thisonenessita": {
+    "snap_id": "n9CkqzmSWCVQwgJNgkREK0JYmYHRAyI9"
+  },
+  "u1test20161003": {
+    "snap_id": "ugd8vNQf2BupFtUC49wmReDgPSxmSDt8"
+  },
+  "vaca": {
+    "snap_id": "AixL7PiXrttKHPsAV2vz7eLyzJQnSCic"
+  },
+  "vlc": {
+    "snap_id": "TTnQvhtwHLGMcCvLIxsqW81iMyLaeFTW"
+  }
+}
