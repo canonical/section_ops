@@ -24,7 +24,9 @@ N_FEATURED = 20
 STAGING_API_HOST = 'api.staging.snapcraft.io'
 PROD_API_HOST = 'api.snapcraft.io'
 
-logging.basicConfig(format='%(asctime)s %(levelname)-4.4s  %(message)s')
+logging.basicConfig(format='%(asctime)s %(levelname)s  %(message)s')
+logging.addLevelName(logging.WARNING, "\033[1;93mWARN\033[0m")
+logging.addLevelName(logging.ERROR, "\033[1;91mERRO\033[0m")
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
