@@ -2,7 +2,7 @@
 """See README.md for usage"""
 
 import argparse
-import os
+import glob
 import itertools
 import json
 import logging
@@ -43,6 +43,10 @@ def parse_cmdline_args():
 def get_filename(prefix, staging):
     template = '{}.staging.json' if staging else '{}.json'
     return template.format(prefix)
+
+
+def get_section_dir(staging):
+    return 'staging' if staging else 'prod'
 
 
 def get_api_host(staging):
@@ -152,10 +156,9 @@ def process_sections(args, name_cache):
 
     logger.info('Processing new sections ...')
     new_sections = {}
-    for fn in os.listdir('.'):
-        if not fn.endswith('.section'):
-            continue
-        section_name = fn.split('.')[0]
+    for fn in glob.glob('{}/*.section'.format(get_section_dir(args.staging))):
+        # Get the "file" part of "dir/file.ext"
+        section_name = fn.split('/')[1].split('.')[0]
         names = [n.strip() for n in open(fn).readlines() if n.strip()]
         unique_names = set(names)
         logger.info(
