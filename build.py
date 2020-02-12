@@ -301,7 +301,7 @@ def main():
         logger.info('Loading cache ...')
         with open(get_filename('cache', args.staging)) as fd:
             name_cache = json.load(fd)
-    except:
+    except FileNotFoundError:
         logger.warning('Missing/Cold cache ...')
 
     try:
