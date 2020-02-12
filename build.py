@@ -41,13 +41,12 @@ def parse_cmdline_args():
     return parser.parse_args()
 
 
-def get_filename(prefix, staging):
-    template = 'staging/{}.json' if staging else 'prod/{}.json'
-    return template.format(prefix)
-
-
 def get_section_dir(staging):
     return 'staging' if staging else 'prod'
+
+
+def get_filename(prefix, staging):
+    return '{}/{}.json'.format(get_section_dir(staging), prefix)
 
 
 def get_api_host(staging):
