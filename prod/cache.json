@@ -503,6 +503,9 @@
   "eog": {
     "snap_id": "wWtGKn0vLvagfg975tebXfBARLUvU3G7"
   },
+  "ephemeral": {
+    "snap_id": "r0a7qv053UQ1ufWuv2FMgNbSVnLhMH1G"
+  },
   "epicpinball": {
     "snap_id": "0rLo209cjpP5Z3xp7PAXJlyLPB5BJLGZ"
   },
@@ -1222,6 +1225,9 @@
   },
   "lxd": {
     "snap_id": "J60k4JY0HppjwOjW8dZdYc8obXKxujRu"
+  },
+  "maas": {
+    "snap_id": "shY22YTZ3RhJJDOj0MfmShTNZTEb1Jiq"
   },
   "mackup": {
     "snap_id": "p2y98MfYHtb2XRa0owYhp8S7naVQzTWA"
