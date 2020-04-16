@@ -155,6 +155,9 @@
   "bomber": {
     "snap_id": "Cron8FQCzFbcO06XDNQmHO4OVGYjl8ny"
   },
+  "bombsquad": {
+    "snap_id": "8DRIzp2YkFQVDXPiOoKN3Rq1RAY9p5pw"
+  },
   "bookworm": {
     "snap_id": "iUirq8Q6bh9OBaMfRaEGKTkLqHiKXXVh"
   },
@@ -226,6 +229,9 @@
   },
   "cheat": {
     "snap_id": "tTBqYakHg3mCU6zTnRTXkOW0UYutqiaJ"
+  },
+  "cherrytree": {
+    "snap_id": "ne8DjJO8ts6inYLWUlDs3jLlrITuHrJV"
   },
   "chromium": {
     "snap_id": "XKEcBqPM06H1Z7zGOdG5fbICuf8NWK5R"
@@ -668,6 +674,9 @@
   "gitter-desktop": {
     "snap_id": "bCNAwbJcrJfyMSsyBGfHJAOwLwRpnFIU"
   },
+  "glimpse-editor": {
+    "snap_id": "sZHagB4CHKJwFqc8f1JQFZYzlS7OLTf8"
+  },
   "gmusic": {
     "snap_id": "Bq9EYxkR8qQqxdwHtYmtR7DJ1OGqtJ1i"
   },
@@ -965,6 +974,9 @@
   "kcalc": {
     "snap_id": "yUnRIACvPcaHjEasN7enV9PYXgrXVdML"
   },
+  "kdenlive": {
+    "snap_id": "VJV60ZSgXvOHQRwhT4RLdnKgp1C0qg6f"
+  },
   "kdictionary": {
     "snap_id": "Un2mPwRgVe4OQwiRHHnXVMFHNjnjtt2m"
   },
@@ -1102,6 +1114,9 @@
   },
   "ksnakeduel": {
     "snap_id": "KE5bJLalxLcqzdB180uL9ptBHGAd4PkM"
+  },
+  "ksnip": {
+    "snap_id": "cq81GqilUCx64PTWfq1QdFoaCGJMUonT"
   },
   "kspaceduel": {
     "snap_id": "FCHgXZiZiHHaevkFQk1kCMYpZqIkWkFX"
@@ -1391,6 +1406,9 @@
   "mqtt-explorer": {
     "snap_id": "I4xRvFAz5Sy6ETH2a2xTUi3vCMCd7KYB"
   },
+  "mqttx": {
+    "snap_id": "Uy5340etvpJkG4Vigi5jlO1uXieSSyjC"
+  },
   "mrrescue": {
     "snap_id": "lpYUqP4NUoa52wvQGcVEPJrUGOjdHzY4"
   },
@@ -1432,6 +1450,9 @@
   },
   "natron": {
     "snap_id": "tIi6q9HP7YCxEzo5JO6wjhP8KK5941rm"
+  },
+  "ncspot": {
+    "snap_id": "EruDd0o9OjcA6TNLcNilWJpPI0YfQCEb"
   },
   "net-worth": {
     "snap_id": "AfElj6EtSLqx7n9YRtLagyB1prXMhcwD"
@@ -1766,6 +1787,9 @@
   "quadrapassel": {
     "snap_id": "bjPxXSBdXzlBa4PnaYGZtofDVAHRlcj7"
   },
+  "quake-shareware": {
+    "snap_id": "Ji41L18QP6HYiuIrEe3qU0iBN5PGBphn"
+  },
   "quassel-webserver": {
     "snap_id": "7wldDCDQ9Bor0bqOEXm9EU3rdlubPOD4"
   },
@@ -1844,6 +1868,9 @@
   "rokuterm": {
     "snap_id": "C8Snu9zjZCV5EM8MgCP6WQA5WBaid5UV"
   },
+  "rpi-imager": {
+    "snap_id": "MErZVJWKGDh2njdopbdNDkko2RU5cxlj"
+  },
   "rssepisodeextractor": {
     "snap_id": "HHOd5EhlYva7SorpPGpLiZmfREMoUMEX"
   },
@@ -1882,6 +1909,9 @@
   },
   "sdlpop": {
     "snap_id": "gmEYI3Be1Sbo0OSVdOrYDOHFuYrnLKvh"
+  },
+  "selflessheroes": {
+    "snap_id": "rWZRaQjEXk7T2AZKYq1NCoCxycZNNUAd"
   },
   "serve": {
     "snap_id": "vqLfBn5vi0SFgHWvaKglLBYd0m6YZrFd"
@@ -2413,6 +2443,9 @@
   },
   "znode": {
     "snap_id": "6zW2eBVqeKfqzJ8E2RnyQ6DROPq1IZXD"
+  },
+  "zoom-client": {
+    "snap_id": "76rrD7USwCJrZgepbRk7UdFEWON3tVKX"
   },
   "zulip": {
     "snap_id": "xWf9D42hfkH9MaVgzpCr8o5O5L1SqWUh"

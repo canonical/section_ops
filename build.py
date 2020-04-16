@@ -37,6 +37,13 @@ def parse_cmdline_args():
         description="Section Operations", allow_abbrev=False,
     )
     parser.add_argument("--staging", action="store_true")
+    parser.add_argument(
+        "--quiet",
+        action="store_const",
+        const=logging.WARNING,
+        default=logging.INFO,
+        dest="log_level",
+    )
     return parser.parse_args()
 
 
@@ -86,7 +93,9 @@ def get_section_snaps(staging, section_name):
     url = (
         "https://{}/api/v1/snaps/search"
         "?scope=wide&arch=wide&confinement=strict,classic,devmode"
-        "&fields=snap_id&section={}".format(get_api_host(staging), section_name)
+        "&fields=snap_id&section={}".format(
+            get_api_host(staging), section_name
+        )
     )
     return _walk_through(url)
 
@@ -164,7 +173,9 @@ def process_sections(args, name_cache):
         names = [n.strip() for n in open(fn).readlines() if n.strip()]
         unique_names = set(names)
         logger.info(
-            "*** Parsing {} ({} entries)".format(section_name, len(unique_names))
+            "*** Parsing {} ({} entries)".format(
+                section_name, len(unique_names)
+            )
         )
         if len(unique_names) < len(names):
             logger.warning("!!! Ignoring duplicated entries.")
@@ -237,7 +248,8 @@ def process_sections(args, name_cache):
         if section_name not in EXCLUSIVE_CATEGORIES:
             continue
         snap_ids = list(
-            set(current_sections[section_name]) - set(new_sections[section_name])
+            set(current_sections[section_name])
+            - set(new_sections[section_name])
         )
         if not snap_ids:
             continue
@@ -280,7 +292,9 @@ def process_sections(args, name_cache):
     if delete_sections:
         print(
             '  $ psql <dsn> -c "DELETE FROM section WHERE '
-            'name IN ({});"'.format(", ".join([repr(s) for s in delete_sections]))
+            'name IN ({});"'.format(
+                ", ".join([repr(s) for s in delete_sections])
+            )
         )
         print()
 
@@ -290,7 +304,9 @@ def process_sections(args, name_cache):
 
         promoted_by_snap_id = {}
         for snaps in sections_by_name.values():
-            promoted_by_snap_id.update({s["snap_id"]: s["name"] for s in snaps})
+            promoted_by_snap_id.update(
+                {s["snap_id"]: s["name"] for s in snaps}
+            )
 
         for n in delete_sections:
             dead_ids = [
@@ -309,6 +325,8 @@ def process_sections(args, name_cache):
 
 def main():
     args = parse_cmdline_args()
+
+    logger.setLevel(args.log_level)
 
     name_cache = {}
     try:
