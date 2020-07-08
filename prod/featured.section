@@ -1,7 +1,10 @@
 flokk-contacts
-lxd
-notepad-plus-plus
-syncplay
+flutter
+code
+android-studio
+flutter-gallery
+authpass
+batufo
 openscad
 mindustry
 microk8s
@@ -13,8 +16,6 @@ minetest
 powershell
 obs-studio
 twist
-authpass
-android-studio
 mattermost-desktop
 matterhorn
 signal-desktop
@@ -24,5 +25,4 @@ sdlpop
 fortask
 shotcut
 ymuse
-cctv-viewer
 subtitld
