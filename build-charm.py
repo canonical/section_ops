@@ -13,9 +13,6 @@ import requests
 # Categories that do not allow self-serving.
 CATEGORIES_TO_UPDATE = ("featured",)
 
-# Number of entries (snaps) marked as "featured" within each section.
-N_FEATURED = 20
-
 STAGING_API_HOST = "api.staging.charmhub.io"
 PROD_API_HOST = "api.charmhub.io"
 
@@ -90,8 +87,8 @@ def process_sections(args, name_cache):
             sections_by_name[name].append(charm)
 
     current_sections = {
-        section_name: [s["id"] for s in snaps]
-        for section_name, snaps in sections_by_name.items()
+        section_name: [c["id"] for c in charms]
+        for section_name, charms in sections_by_name.items()
     }
 
     logger.info("Processing new sections ...")
