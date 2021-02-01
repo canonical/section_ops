@@ -5,6 +5,9 @@ Section operation hacks
 # Running
 
     $ ./build.py [--staging]
+      -- or --
+    $ ./build-charm.py [--staging]
+
     [ Output ]
     ========================================================================
     [ Instructions ]
