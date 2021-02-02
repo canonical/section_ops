@@ -1,0 +1,14 @@
+prometheus
+postgresql-k8s
+discourse
+elasticsearch
+graylog-k8s
+mattermost
+grafana
+alertmanager
+mariadb
+mongodb-k8s
+jenkins-agent
+metallb-controller
+metallb-speaker
+openldap
