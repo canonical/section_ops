@@ -167,7 +167,12 @@ def process_sections(args, name_cache):
 
     logger.info("Processing new sections ...")
     new_sections = {}
-    for fn in glob.glob("{}/*.section".format(get_section_dir(args.staging))):
+    snap_sections = set(
+        glob.glob("{}/*.section".format(get_section_dir(args.staging)))
+    ) - set(
+        glob.glob("{}/*.charm.section".format(get_section_dir(args.staging)))
+    )
+    for fn in snap_sections:
         # Get the "file" part of "dir/file.ext"
         section_name = fn.split("/")[1].split(".")[0]
         names = [n.strip() for n in open(fn).readlines() if n.strip()]
