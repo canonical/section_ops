@@ -134,6 +134,7 @@ def process_sections(args, name_cache):
             charm = {
                 "snap_id": charm_id,
                 "featured": False,
+                "package_type": "charm",
                 # Keep the desired order, even if unfeatured.
                 "score": len(charm_ids) - i,
             }
