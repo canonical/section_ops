@@ -1,44 +1,11 @@
 {
-  "alertmanager": {
-    "id": "CraOkB7ML0fxSjg5wlRxaBFp9ZutRR4s"
+  "charmed-osm-mariadb-k8s": {
+    "id": "HPW6zce6dtewz9lwsokAqZ1AhiIN0dD9"
   },
-  "discourse": {
-    "id": "omtOXBDTPiI5fPY1wxaXJuKg9byQunVH"
+  "graylog": {
+    "id": "peGXw1iAhkvrdebaKf6CX8ypaa5EsDUz"
   },
-  "elasticsearch": {
-    "id": "Ve0CMsbufmhLjdre4rd7FlVVy3hIF8ZJ"
-  },
-  "grafana": {
-    "id": "dlGWfsWLlFjMJaeGFHYjosLTRIdNN3Mg"
-  },
-  "graylog-k8s": {
-    "id": "SHuuTXE1Z3HkTiA9wVFZ68nZXSGytqFZ"
-  },
-  "jenkins-agent": {
-    "id": "6Gs0lbddVMXZPvvhgjRYHSiQjHTjEpNx"
-  },
-  "mariadb": {
-    "id": "Nm02hui8gdgh86GjOVlPNuEMbbM8iBEH"
-  },
-  "mattermost": {
-    "id": "HzikIBbgkFxKApYSwnS8n2dUYGLfMuXd"
-  },
-  "metallb-controller": {
-    "id": "kZiVDyDLee8HqTVFzQXG0rYIuRRRT6pj"
-  },
-  "metallb-speaker": {
-    "id": "Ll91dN2dlixyrcoJVvimbyxR07XlUR6Q"
-  },
-  "mongodb-k8s": {
-    "id": "jxWQBfhyfR5pOsA15hcBPRJJBHSIid9y"
-  },
-  "openldap": {
-    "id": "oVC5E5DVGuOGVi0IUCQkO86bBp8J7qlc"
-  },
-  "postgresql-k8s": {
-    "id": "vON4q5N02vMH4pNVIZsi6H0AykKV18IO"
-  },
-  "prometheus": {
-    "id": "SVrUMr6xRBFDlS83i4VrzfNQ1Uy6yFDg"
+  "postgresql": {
+    "id": "QFMueL7ou3xm7AONiGkUEnnxNLvu7dtG"
   }
 }
