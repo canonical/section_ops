@@ -1,8 +1,11 @@
 prometheus
+postgresql
 postgresql-k8s
 discourse
 elasticsearch
 graylog-k8s
+graylog
+charmed-osm-mariadb-k8s
 mattermost
 grafana
 alertmanager
