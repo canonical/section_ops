@@ -214,6 +214,7 @@ def process_sections(args, name_cache):
                 "featured": featured,
                 # Keep the desired order, even if unfeatured.
                 "score": len(snap_ids) - i,
+                "package_type": "snap",
             }
             snaps.append(snap)
 
@@ -229,6 +230,7 @@ def process_sections(args, name_cache):
                     "snap_id": snap_id,
                     "featured": False,
                     "score": 0,
+                    "package_type": "snap",
                 }
                 snaps.append(snap)
 
@@ -261,7 +263,10 @@ def process_sections(args, name_cache):
         delete_payload["sections"].append(
             {
                 "section_name": section_name,
-                "snaps": [{"snap_id": s} for s in sorted(snap_ids)],
+                "snaps": [{
+                    "snap_id": s,
+                    "package_type": "snap",
+                } for s in sorted(snap_ids)],
             }
         )
 
