@@ -166,7 +166,10 @@ def process_sections(args, name_cache):
         delete_payload["sections"].append(
             {
                 "section_name": section_name,
-                "snaps": [{"snap_id": s} for s in sorted(charm_ids)],
+                "snaps": [{
+                    "snap_id": s,
+                    "package_type": "charm",
+                } for s in sorted(charm_ids)],
             }
         )
 
