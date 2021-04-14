@@ -12,6 +12,10 @@ import requests
 
 # Categories that do not allow self-serving.
 CATEGORIES_TO_UPDATE = ("featured",)
+CHARM_TYPE_MAPPING = {
+    'charm': 'charm',
+    'bundle': 'charm-bundle',
+}
 
 STAGING_API_HOST = "api.staging.charmhub.io"
 PROD_API_HOST = "api.charmhub.io"
@@ -51,19 +55,25 @@ def get_api_host(staging):
     return STAGING_API_HOST if staging else PROD_API_HOST
 
 
-def get_charm_id(staging, name, name_cache):
+def get_charm_id_and_type(staging, name, name_cache):
     """If 'staging' is truthy, request from staging instead of prod."""
-    if name_cache.get(name) is not None:
-        return name_cache[name]["id"]
+    try:
+        if name_cache.get(name) is not None:
+            return name_cache[name]["id"], name_cache[name]["type"]
+    except KeyError:
+        # If type isn't in cache, just fetch info again
+        pass
 
     logger.info("Resolving {} ...".format(name))
     url = "https://{}/v2/charms/info/{}".format(get_api_host(staging), name)
-    r = requests.get(url)
+    r = requests.get(url).json()
 
-    charm_id = r.json()["id"]
+    charm_id = r["id"]
+    charm_type = CHARM_TYPE_MAPPING[r["type"]]
     name_cache.setdefault(name, {})["id"] = charm_id
+    name_cache[name]["type"] = charm_type
 
-    return charm_id
+    return charm_id, charm_type
 
 
 def get_section_charms(staging, section_name):
@@ -87,7 +97,7 @@ def process_sections(args, name_cache):
             sections_by_name[name].append(charm)
 
     current_sections = {
-        section_name: [c["id"] for c in charms]
+        section_name: [(c["id"], c["type"]) for c in charms]
         for section_name, charms in sections_by_name.items()
     }
 
@@ -114,15 +124,16 @@ def process_sections(args, name_cache):
                 logger.info("!!! Ignoring {}".format(name))
                 continue
             try:
-                charm_id = get_charm_id(args.staging, name, name_cache)
+                charm_id, charm_type = get_charm_id_and_type(
+                    args.staging, name, name_cache)
             except KeyError as err:
                 logger.warning(
                     "!!! From '{}', charm '{}' not in store.".format(fn, name)
                 )
                 continue
-            if charm_id in charm_ids:
+            if (charm_id, charm_type,) in charm_ids:
                 continue
-            charm_ids.append(charm_id)
+            charm_ids.append((charm_id, charm_type,))
         new_sections[section_name] = charm_ids
 
     logger.info("Calculating updates ...")
@@ -130,11 +141,11 @@ def process_sections(args, name_cache):
     for section_name in sorted(new_sections.keys()):
         charm_ids = new_sections[section_name]
         charms = []
-        for i, charm_id in enumerate(charm_ids):
+        for i, (charm_id, charm_type) in enumerate(charm_ids):
             charm = {
                 "snap_id": charm_id,
                 "featured": False,
-                "package_type": "charm",
+                "package_type": charm_type,
                 # Keep the desired order, even if unfeatured.
                 "score": len(charm_ids) - i,
             }
@@ -167,9 +178,9 @@ def process_sections(args, name_cache):
             {
                 "section_name": section_name,
                 "snaps": [{
-                    "snap_id": s,
-                    "package_type": "charm",
-                } for s in sorted(charm_ids)],
+                    "snap_id": charm_id,
+                    "package_type": charm_type,
+                } for charm_id, charm_type in sorted(charm_ids)],
             }
         )
 
