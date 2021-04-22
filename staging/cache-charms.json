@@ -1,11 +1,34 @@
 {
   "charmed-osm-mariadb-k8s": {
-    "id": "HPW6zce6dtewz9lwsokAqZ1AhiIN0dD9"
+    "id": "HPW6zce6dtewz9lwsokAqZ1AhiIN0dD9",
+    "type": "charm"
+  },
+  "elasticsearch": {
+    "id": "tFmpIq4CciTUhdUhP75Bao4B8QLsDzKv",
+    "type": "charm"
+  },
+  "grafana": {
+    "id": "AOpieNRaCrd89t3KcfQm5tFMoF4T1Xbs",
+    "type": "charm"
   },
   "graylog": {
-    "id": "peGXw1iAhkvrdebaKf6CX8ypaa5EsDUz"
+    "id": "peGXw1iAhkvrdebaKf6CX8ypaa5EsDUz",
+    "type": "charm"
+  },
+  "mariadb": {
+    "id": "luMYhvDqCcHw8LL8bBUhuL5naot0OMZV",
+    "type": "charm"
+  },
+  "mattermost": {
+    "id": "FFL2b7bRmEJbjwVfvRkBgqcJtycPNA2e",
+    "type": "charm"
   },
   "postgresql": {
-    "id": "QFMueL7ou3xm7AONiGkUEnnxNLvu7dtG"
+    "id": "QFMueL7ou3xm7AONiGkUEnnxNLvu7dtG",
+    "type": "charm"
+  },
+  "prometheus": {
+    "id": "i5i85O0Plm5r5qti6BVw1mt4GqtnJFEv",
+    "type": "charm"
   }
 }
