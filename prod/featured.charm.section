@@ -12,3 +12,16 @@ jenkins-agent
 metallb-controller
 metallb-speaker
 openldap
+charmcraft-alertmanager
+charmcraft-elasticsearch
+charmcraft-grafana
+charmcraft-graylog
+charmcraft-prometheus
+charmed-osm-mariadb-k8s
+containers-metallb-controller
+containers-metallb-speaker
+discourse-charmers-discourse-k8s
+jenkins-ci-charmers-jenkins-agent
+mattermost-charmers-mattermost
+openldap-charmers-openldap
+postgresql-charmers-postgresql-k8s
