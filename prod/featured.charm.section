@@ -1,12 +1,8 @@
-prometheus
 postgresql-k8s
-discourse
-elasticsearch
+discourse-k8s
 graylog-k8s
-mattermost
-grafana
+mattermost-k8s
 alertmanager
-mariadb
 mongodb-k8s
 jenkins-agent
 metallb-controller
