@@ -1,13 +1,3 @@
-postgresql-k8s
-discourse-k8s
-graylog-k8s
-mattermost-k8s
-alertmanager
-mongodb-k8s
-jenkins-agent
-metallb-controller
-metallb-speaker
-openldap
 charmcraft-alertmanager
 charmcraft-elasticsearch
 charmcraft-grafana
@@ -20,3 +10,4 @@ discourse-charmers-discourse-k8s
 jenkins-ci-charmers-jenkins-agent
 mattermost-charmers-mattermost
 openldap-charmers-openldap
+postgresql-k8s
