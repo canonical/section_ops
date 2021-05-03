@@ -6,7 +6,7 @@ Section operation hacks
 
     $ ./build.py [--staging]
       -- or --
-    $ ./build-charm.py [--staging]
+    $ ./build-charm.py [--staging] [--use-cache]
 
     [ Output ]
     ========================================================================

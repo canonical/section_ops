@@ -2,6 +2,7 @@
 """See README.md for usage"""
 
 import argparse
+import contextlib
 import glob
 import json
 import logging
@@ -31,6 +32,7 @@ def parse_cmdline_args():
     parser = argparse.ArgumentParser(
         description="Section Operations", allow_abbrev=False,
     )
+    parser.add_argument("--use-cache", default=False, action="store_true")
     parser.add_argument("--staging", action="store_true")
     parser.add_argument(
         "--quiet",
@@ -218,25 +220,37 @@ def process_sections(args, name_cache):
     print(72 * "=")
 
 
-def main():
-    args = parse_cmdline_args()
+def load_from_cache(staging):
+    logger.info("Loading cache ...")
+    with open(get_filename("cache", staging)) as fd:
+        return json.load(fd)
 
-    logger.setLevel(args.log_level)
 
-    name_cache = {}
+def persist_to_cache(name_cache, staging):
+    logger.info("Saving cache ...")
+    with open(get_filename("cache", staging), "w") as fd:
+        fd.write(json.dumps(name_cache, indent=2, sort_keys=True))
+
+
+@contextlib.contextmanager
+def get_name_cache(use_cache, staging):
     try:
-        logger.info("Loading cache ...")
-        with open(get_filename("cache", args.staging)) as fd:
-            name_cache = json.load(fd)
+        name_cache = load_from_cache(staging) if use_cache else {}
     except FileNotFoundError:
         logger.warning("Missing/Cold cache ...")
 
-    try:
+    yield name_cache
+
+    if use_cache:
+        persist_to_cache(name_cache, staging)
+
+
+def main():
+    args = parse_cmdline_args()
+    logger.setLevel(args.log_level)
+
+    with get_name_cache(args.use_cache, args.staging) as name_cache:
         process_sections(args, name_cache)
-    finally:
-        logger.info("Saving cache ...")
-        with open(get_filename("cache", args.staging), "w") as fd:
-            fd.write(json.dumps(name_cache, indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":
