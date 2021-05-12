@@ -11,8 +11,11 @@ cassandra-k8s
 postgresql-k8s
 discourse-charmers-discourse-k8s
 charmed-osm-mariadb-k8s
-jenkins-ci-charmers-jenkins-agent
+jenkins-agent-k8s
 containers-metallb-controller
 containers-metallb-speaker
 openldap-charmers-openldap
-mattermost-charmers-mattermost
+mattermost-k8s
+redis-k8s
+site24x7-exporter-k8s
+wordpress-k8s
