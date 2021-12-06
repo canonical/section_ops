@@ -9,6 +9,7 @@ grafana-k8s
 mysql-k8s
 cassandra-k8s
 postgresql-k8s
+mattermost-k8s
 discourse-charmers-discourse-k8s
 charmed-osm-mariadb-k8s
 jenkins-ci-charmers-jenkins-agent
