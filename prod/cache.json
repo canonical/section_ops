@@ -2,11 +2,17 @@
   "0ad": {
     "snap_id": "LPDZP2jWsSizNHoWrJnckPzVuNm8p2Ur"
   },
+  "1password": {
+    "snap_id": "Djw5Ty1hbxdEljOgxlBrrgbxiQTDIzaI"
+  },
   "acestreamplayer": {
     "snap_id": "sKHHd0HDIrnViLSTCRVGALg1mHkwQgFp"
   },
   "aesify": {
     "snap_id": "tpkb0Lkn8z8i63DjmFjqXzFqsS9urDAH"
+  },
+  "alacritty": {
+    "snap_id": "CPA6L7h6dWM7VAmIPTHX14eMgKEZqMJw"
   },
   "aldo": {
     "snap_id": "mZSnBOeJVLlpwRrd7VRVhWG5iM253QgD"
@@ -95,6 +101,12 @@
   "bobrossquotes": {
     "snap_id": "dfS3p6G11hsGAhi8HpgycWF2sGkDJzYs"
   },
+  "bomber": {
+    "snap_id": "Cron8FQCzFbcO06XDNQmHO4OVGYjl8ny"
+  },
+  "bomist": {
+    "snap_id": "x72g9iJBltAWMyR4Y44N2uVZrbdSX5lI"
+  },
   "bookworm": {
     "snap_id": "iUirq8Q6bh9OBaMfRaEGKTkLqHiKXXVh"
   },
@@ -151,6 +163,9 @@
   },
   "cli-worm": {
     "snap_id": "9HmljqUYQ2rn66DmrIZ4Cmd14BkzUCHx"
+  },
+  "climate-trail": {
+    "snap_id": "3xxDsHs9oCVQuvf5L8KTJ1BOKtzsbC8e"
   },
   "clion": {
     "snap_id": "6JBjLwyVchga4cOSDqhWJd9NgQfrTYam"
@@ -214,6 +229,9 @@
   },
   "directpdf": {
     "snap_id": "sMXwAM3jVYnZvQEKe8Cv70SjUSqCggXV"
+  },
+  "dirsize": {
+    "snap_id": "tDMW2KYbXJ8hdVfzvf31MFCMxOsajk1G"
   },
   "discographer": {
     "snap_id": "DVYYVuIYligbUAeMq8wJRoRPTQEaXoUu"
@@ -338,6 +356,9 @@
   "fx": {
     "snap_id": "5EKjbF0b4msQgB81xjeVEim3DwQK4mxV"
   },
+  "geforcenow": {
+    "snap_id": "D0GhSSTbJyx4LV9sjd12L0qRaG4nbWDN"
+  },
   "get-iplayer": {
     "snap_id": "KFpiyRyf3GYcvw8yWZzqf3WLhd0yADIM"
   },
@@ -428,6 +449,9 @@
   "hollywood": {
     "snap_id": "Pm2bty7P5bN9ipnbk2lrkYdXsGogokIY"
   },
+  "home-media-server": {
+    "snap_id": "jwPpQ5jtFiCpJO7mHyzZuSdjzsH3892v"
+  },
   "homebridge": {
     "snap_id": "0V4ENmXLyXWDIAozNTzJW5Sm0lyZzhlj"
   },
@@ -484,6 +508,9 @@
   },
   "ixagent": {
     "snap_id": "ww1sjO0wCtzyIPEtfEUpg4VOAYU6JoQ4"
+  },
+  "jami": {
+    "snap_id": "v2dLJDv8AcX1mtod8h5bmJknlYiIKNTJ"
   },
   "john-the-ripper": {
     "snap_id": "TACZTA4fOteK0kPG0sjr3h1nzC0mPq2c"
@@ -551,14 +578,26 @@
   "kmplot": {
     "snap_id": "N7adG8PJBGykmGcFsNeOUeD20O1dmNjs"
   },
+  "knowte": {
+    "snap_id": "sl6BLmE7A6snHMiSd5aIL9o9cII8o6PM"
+  },
   "kolourpaint": {
     "snap_id": "kvAx1DJUbiqow1LgLfW5OzjksfqUEcqJ"
+  },
+  "kompare": {
+    "snap_id": "uHVPsuVlr2fZzDMq4Llp62rrVdANBhGc"
+  },
+  "konquest": {
+    "snap_id": "yo4T0Pqw4cFmuzKLFsJU3y21Qe1VK33G"
   },
   "konversation": {
     "snap_id": "BY0kc7ovfLfEmprwpEIToIOatcNj8KfV"
   },
   "koombo": {
     "snap_id": "nwcBefqdOphIcUPqikK2XJSFHlZirU7G"
+  },
+  "kreya": {
+    "snap_id": "SgnoJe4xxMeUO59Hg4l4N6M7q0HW3YmP"
   },
   "krita": {
     "snap_id": "r8Shy9i0XE50a3tUlChg3tvjSeLGJ4Za"
@@ -749,11 +788,17 @@
   "nanowallet": {
     "snap_id": "ikUMxZjKq6UdnC79fxx6zc5kvRDYc1Dw"
   },
+  "natron": {
+    "snap_id": "tIi6q9HP7YCxEzo5JO6wjhP8KK5941rm"
+  },
   "neuronify": {
     "snap_id": "X0OkazzQNuIgqd1SSlyYTeoYLR9YBN40"
   },
   "newsboat": {
     "snap_id": "drQZqxm0kPl3scod6AmZRzZBhjyCBsvj"
+  },
+  "newsflash": {
+    "snap_id": "TZ497kjnNaKkMc9niDcq2fcC323R6gNd"
   },
   "newton": {
     "snap_id": "FcGpifNQEF4mcSubiOPSRloXCTTOb8NQ"
@@ -836,6 +881,9 @@
   "openscad-nightly": {
     "snap_id": "U0G6xWcDnmIByhlnpmuxM2zmzsLwmm60"
   },
+  "openspades": {
+    "snap_id": "LXzWwdatOydhSDjWrLBPRTjgP5f4g1Ee"
+  },
   "opera": {
     "snap_id": "AljMvoQbHtnnrka00lIoxHJ6Qhfn0X8m"
   },
@@ -880,6 +928,9 @@
   },
   "pin-town": {
     "snap_id": "8ZiDCAC7uIH80MIQzZDRgGNtjQCoASFU"
+  },
+  "pinta": {
+    "snap_id": "BjE9sgvAgtIBuxSaYGdEuJOVoOZGsz0s"
   },
   "pivx": {
     "snap_id": "jTBnCMtrkc7KysHZKE28UiBaRlCbasc1"
@@ -935,6 +986,9 @@
   "quadrapassel": {
     "snap_id": "bjPxXSBdXzlBa4PnaYGZtofDVAHRlcj7"
   },
+  "quoter": {
+    "snap_id": "PWBqfrvvSgJXyXr2OQBD72HrQjA1xY8S"
+  },
   "rclone": {
     "snap_id": "IsLsJunB7e4PJIEtB0VEzfrSWBxgWYlR"
   },
@@ -980,6 +1034,9 @@
   "rssnotify": {
     "snap_id": "TxfaWTWlOuRehP1z38EdjveDoGpVA212"
   },
+  "rubymine": {
+    "snap_id": "1PWZ4ToZh4kt4p67xA2vSvAKvIe3YqbP"
+  },
   "s-search": {
     "snap_id": "j8dcigzzlbhbKXwouOpRTZCpwSBmNcvC"
   },
@@ -1009,6 +1066,9 @@
   },
   "shotcut": {
     "snap_id": "QbcwWzVel4jXFaSClk6oiPpN3GCTXwvi"
+  },
+  "shutter": {
+    "snap_id": "vVJRIimdn7euFb5bpoddZscFl7ZNXsjT"
   },
   "sickgear": {
     "snap_id": "QntDb1wZjJJ5lizFjPIj3thQsvSpakI5"
@@ -1067,6 +1127,9 @@
   "spelunky": {
     "snap_id": "HezJbwXZRVwO5jsliYx2WCwelWLkWuBW"
   },
+  "spot": {
+    "snap_id": "H1TUdroMFuzPhXsV6dvvecm6Z1i5bOhy"
+  },
   "spotify": {
     "snap_id": "pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7"
   },
@@ -1117,6 +1180,9 @@
   },
   "syncthing": {
     "snap_id": "StnG0gLHYykQiVFPhwSBb2pdcYPRGtxe"
+  },
+  "syzygy": {
+    "snap_id": "xNbi6GGO2z8zNpjvRdt25BClGtsxC0EM"
   },
   "talesofmajeyal": {
     "snap_id": "rL5LA8xrvBd95OYczuFAWk05rUUpB4u9"
@@ -1172,6 +1238,9 @@
   "transitionsdj": {
     "snap_id": "hAS84nY2V1Ip6fu1iEz5cKs19BdBdhyq"
   },
+  "triangle-wallpaper": {
+    "snap_id": "3vWkwM9hPxKJTS20oBia5EGY16u1jRMr"
+  },
   "truthtables": {
     "snap_id": "h4UhB9gpv1UbRyZjGBWZ34N3lMflbg6L"
   },
@@ -1180,6 +1249,9 @@
   },
   "tusk": {
     "snap_id": "HVJ2ambr66oyGX9hAjvRe4jQi8ngjxMT"
+  },
+  "typora": {
+    "snap_id": "LYIQDe7StzfergzK3xBwUwSHdV9VZejB"
   },
   "ubports-installer": {
     "snap_id": "mq0sTMV7a8744UTRBwQHimStAqsGzbjj"
@@ -1241,6 +1313,9 @@
   "whatsdesk": {
     "snap_id": "M7gg5zVdwlMpELFowEYDELP5Us8G9Cjw"
   },
+  "whatsie": {
+    "snap_id": "WwwfGkUJunYzwImtdN2JlOU6UjnvkSD9"
+  },
   "wifi-ap": {
     "snap_id": "2rGgvyaY0CCzlWuKAPwFtCWrgwkM8lqS"
   },
@@ -1267,6 +1342,9 @@
   },
   "wormhole": {
     "snap_id": "NOZSH62zMXFazJq0adh8ztBM7VYNPxmP"
+  },
+  "x16emu": {
+    "snap_id": "9sAAQxWq3Uy4QygjQ3VzerYjqMLDKiDl"
   },
   "xonotic": {
     "snap_id": "pnfo400U62Md0JANxQwdy7dXvs8HztbI"
