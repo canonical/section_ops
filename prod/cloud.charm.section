@@ -1,0 +1,10 @@
+slurm
+kubernetes-core
+charmed-kubernetes
+canonical-kubernetes-canal
+hadoop-processing
+spark-processing
+kubeflow-edge
+kubeflow
+kubeflow-pipelines
+openstack-base
