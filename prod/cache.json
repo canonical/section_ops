@@ -41,6 +41,9 @@
   "anituner": {
     "snap_id": "DfdFidugGYgvr9liYVMv93SfAzdz0tf9"
   },
+  "antstream-arcade": {
+    "snap_id": "RkPxAYeS2WBafDZjumfxhHAOlbtE3OSf"
+  },
   "ao": {
     "snap_id": "PUfipsnJ8BkRmMCUM9LdVIoVt5oSrYD5"
   },
@@ -94,6 +97,9 @@
   },
   "blender-tpaw": {
     "snap_id": "sPLlatJ5osPKOxDpCPBjLadiHMGt8Ibn"
+  },
+  "blix": {
+    "snap_id": "RZUVHjSRaPMAYHGX2INIOdEXnBcObJ2p"
   },
   "boa": {
     "snap_id": "eDsKaYaf4gx5I1bfSy6SdTTfKc1ppDx7"
@@ -542,6 +548,9 @@
   "kcalc": {
     "snap_id": "yUnRIACvPcaHjEasN7enV9PYXgrXVdML"
   },
+  "kdenlive": {
+    "snap_id": "VJV60ZSgXvOHQRwhT4RLdnKgp1C0qg6f"
+  },
   "kdictionary": {
     "snap_id": "Un2mPwRgVe4OQwiRHHnXVMFHNjnjtt2m"
   },
@@ -655,6 +664,9 @@
   },
   "links": {
     "snap_id": "XwrNY1ywHBH1BLx60DcXsPOU0xketHwh"
+  },
+  "litteris": {
+    "snap_id": "fc5xFA0vRARAQHRTf1j50jrgJVx9UXSC"
   },
   "liveforspeed": {
     "snap_id": "CpWb5sWIU6DdFJsXMiRcvhRDuyUvhYrA"
@@ -1250,6 +1262,9 @@
   "tusk": {
     "snap_id": "HVJ2ambr66oyGX9hAjvRe4jQi8ngjxMT"
   },
+  "typeapp-mail": {
+    "snap_id": "6q3DYaOccoLoAtATLZ8vIhDeRh6PUXfx"
+  },
   "typora": {
     "snap_id": "LYIQDe7StzfergzK3xBwUwSHdV9VZejB"
   },
@@ -1291,6 +1306,9 @@
   },
   "wallpaperdownloader": {
     "snap_id": "GUTNjfcAL0vHydV8WGIAAmRAfkwuPLUC"
+  },
+  "warble": {
+    "snap_id": "ArigmYCpR7RdjtSP2jB4H0UxTkG7XRLt"
   },
   "warzone2100": {
     "snap_id": "roFhaRzMw8ted6zNEL8NQnNrkFdIHnHv"

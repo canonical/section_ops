@@ -15,7 +15,7 @@ import requests
 CATEGORIES_TO_UPDATE = ("featured",)
 CHARM_TYPE_MAPPING = {
     'charm': 'charm',
-    'bundle': 'charm-bundle',
+    'bundle': 'charm',
 }
 
 STAGING_API_HOST = "api.staging.charmhub.io"
