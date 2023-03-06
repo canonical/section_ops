@@ -4,6 +4,7 @@ mongodb-k8s
 elasticsearch-k8s
 vault
 graylog-k8s
+postgresql
 prometheus-k8s
 alertmanager-k8s
 grafana-k8s
@@ -12,6 +13,7 @@ openstack-base
 postgresql-k8s
 mattermost-k8s
 discourse-k8s
+mongodb
 jenkins-agent-k8s
 microk8s
 anbox-cloud-dashboard
