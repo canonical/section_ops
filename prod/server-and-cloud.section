@@ -1,19 +1,13 @@
 microk8s
 nextcloud
-kata-containers
 docker
 google-cloud-sdk
 canonical-livepatch
 rocketchat-server
 lxd
 mosquitto
-etcd
 sabnzbd
-aws-cli
 doctl
-conjure-up
-minidlna-escoand
-heroku
 keepalived
 amazon-ssm-agent
 prometheus
@@ -26,4 +20,3 @@ kube-scheduler
 kube-controller-manager
 cdk-addons
 kube-apiserver
-robomongo
