@@ -230,6 +230,9 @@
   "deepin-voice-recorder": {
     "snap_id": "TVrOp3yYicfD6d6KozMFEYKklieYdc9m"
   },
+  "digikam": {
+    "snap_id": "GsTIKbLEFcyyGFs0ohPA3L221rENvGo6"
+  },
   "dino": {
     "snap_id": "Ck5djumv3F6a44FXUjDlR6vgXp6G77py"
   },
@@ -295,6 +298,9 @@
   },
   "electrum": {
     "snap_id": "arteQqwdIGwtP3ETSe58cRbhdsa9oS4z"
+  },
+  "emacs": {
+    "snap_id": "4gE2S31SnK2LeqsZF8XTPuHOlqlzbqsW"
   },
   "emercoin-tpaw": {
     "snap_id": "czsJkyGavm3XAP2qFyCNWDprX2d5obtC"
