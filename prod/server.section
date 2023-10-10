@@ -12,7 +12,6 @@ stress-ng
 sabnzbd
 wormhole
 aws-cli
-azure-cli
 google-cloud-sdk
 slcli
 doctl
