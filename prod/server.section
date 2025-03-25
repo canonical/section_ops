@@ -15,7 +15,6 @@ aws-cli
 google-cloud-sdk
 slcli
 doctl
-conjure-up
 minidlna-escoand
 postgresql10
 heroku
@@ -24,3 +23,4 @@ prometheus
 juju
 maas
 lxd
+k8s
