@@ -6,6 +6,7 @@ doctl
 etcd
 google-cloud-sdk
 heroku
+jenkins
 juju
 kata-containers
 keepalived
