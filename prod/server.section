@@ -2,7 +2,6 @@ microk8s
 nextcloud
 wekan
 kata-containers
-docker
 canonical-livepatch
 rocketchat-server
 mosquitto

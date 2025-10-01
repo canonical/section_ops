@@ -251,9 +251,6 @@
   "disk-space-saver": {
     "snap_id": "bhM50YIQql04pvc9D8Xy5VteWw8648wJ"
   },
-  "docker": {
-    "snap_id": "sLCsFAO8PKM5Z0fAKNszUOX0YASjQfeZ"
-  },
   "doctl": {
     "snap_id": "37RaX7lHS7bKamfcFcXcx27EyAaCIzgG"
   },
