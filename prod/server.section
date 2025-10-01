@@ -7,17 +7,13 @@ rocketchat-server
 mosquitto
 etcd
 powershell
-stress-ng
 sabnzbd
 wormhole
 aws-cli
 google-cloud-sdk
 slcli
 doctl
-conjure-up
-minidlna-escoand
 postgresql10
-heroku
 keepalived
 prometheus
 juju
