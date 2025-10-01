@@ -13,7 +13,6 @@ aws-cli
 google-cloud-sdk
 slcli
 doctl
-postgresql10
 keepalived
 prometheus
 juju
