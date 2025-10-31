@@ -185,9 +185,6 @@
   "codebreakers": {
     "snap_id": "9RHGBFG3a83SavexQGzNT8BHMCSfZ3CN"
   },
-  "conjure-up": {
-    "snap_id": "ijQR4HjYlTAmIjELJm5XCpNAqbDZWJ3h"
-  },
   "convos": {
     "snap_id": "hlDnZhhos1kPWFfcJh4xFG9hmXdtVXEx"
   },
@@ -250,9 +247,6 @@
   },
   "disk-space-saver": {
     "snap_id": "bhM50YIQql04pvc9D8Xy5VteWw8648wJ"
-  },
-  "docker": {
-    "snap_id": "sLCsFAO8PKM5Z0fAKNszUOX0YASjQfeZ"
   },
   "doctl": {
     "snap_id": "37RaX7lHS7bKamfcFcXcx27EyAaCIzgG"
@@ -452,9 +446,6 @@
   "helm": {
     "snap_id": "VY12auPDSljUlac4CZaOdMExw7IASsgB"
   },
-  "heroku": {
-    "snap_id": "pAGMQ0HpmF09Smxc9d3ZOUiVNhtWhy7r"
-  },
   "hiri": {
     "snap_id": "rqjJgJ4toGMPKL5GE86c1gbrYfX7R1I9"
   },
@@ -544,9 +535,6 @@
   },
   "kanagame": {
     "snap_id": "ygMXBtxotQOIaXC6qHUwVU95GZ6pshxC"
-  },
-  "kata-containers": {
-    "snap_id": "oTlBRwmiNP4yYPYhhAipQPZ5RPvOpuOm"
   },
   "kbruch": {
     "snap_id": "9sfADJR30T4FSNqaOX3IRZ60sOlEl5fz"
@@ -745,9 +733,6 @@
   },
   "minetest": {
     "snap_id": "DtXxirDGfOc8LeUJVENXGTir4Oq0F7Ts"
-  },
-  "minidlna-escoand": {
-    "snap_id": "pCSVMU1bUNCUbH0bAszxzXtMFxGYQMlp"
   },
   "minuet": {
     "snap_id": "LiZYmk4r1uULUf1T9Dh3lPR36dIqxVfO"
@@ -959,9 +944,6 @@
   "polar-bookshelf": {
     "snap_id": "Zq980ZHa2SkXb3tHKJKS529R2Xqdf29f"
   },
-  "postgresql10": {
-    "snap_id": "W7TagWOq55vJphD3Ek4ZUtQytGRMeQqK"
-  },
   "postman": {
     "snap_id": "fFcOtEEF4EdyYb95IUE5Isy28tICYMLf"
   },
@@ -1165,9 +1147,6 @@
   },
   "step": {
     "snap_id": "LpuxqNxBk13pB40W83yZqzSX2eWaW7Wi"
-  },
-  "stress-ng": {
-    "snap_id": "YMJsyW4vySPdys8BCA7jx8UiOVSVhUT6"
   },
   "stunnel5": {
     "snap_id": "i67wsbss7aILiDJblAGi9I4jLWy2JEZm"
